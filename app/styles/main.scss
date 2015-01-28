@@ -1,0 +1,96 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+// Spencer =====================================================================
+// Variables
+$pageWidth: 1000px;
+
+$cAlaydi: #a33;
+$cGray3: #333;
+$cGray6: #666;
+$cGray9: #999;
+$cGrayC: #ccc;
+$cGrayE: #eee;
+
+
+// Mixins
+@mixin centerPage() {
+  margin: 0 auto;
+  width: $pageWidth;
+  padding: 0 20px;
+}
+
+
+body {
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: $cGray3;
+}
+
+*:before, *:after { box-sizing: inherit; }
+
+ul { margin: 0; padding: 0; }
+
+li { list-style: none; }
+
+a { text-decoration: none; color: $cAlaydi; }
+
+small { font-size: 12px; color: $cGray9; }
+
+
+// Spencer =====================================================================
+section.banner {
+  background-color: $cAlaydi;
+  header {
+    @include centerPage;
+    height: 400px;
+    background-color: $cGrayC;
+    nav {
+      li {
+        margin: 0 5px;
+      }
+      ul.nav {
+        float: left;
+        li {
+          float: left;
+        }
+      }
+      ul.social {
+        float: right;
+        li {
+          float: left;
+        }
+      }
+    }
+  }
+}
+
+// Bob =========================================================================
+.content {
+  @include centerPage;
+  background-color: $cGrayE;
+}
+
+
+// Bob =========================================================================
+section.story {
+  height: 300px;
+  background-color: white;
+}
+
+
+// Spencer =====================================================================
+section.menu {
+  height: 1000px;
+  background-color: $cAlaydi;
+}
+
+
+// John ========================================================================
+section.contact {
+  height: 600px;
+  background-color: white;
+}
+
