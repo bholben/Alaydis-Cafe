@@ -92,5 +92,14 @@ section.menu {
 section.contact {
   height: 600px;
   background-color: white;
+  @include outer-container;
+}
+.leftcol {
+  @include span-columns(4);
+  height: 600px;
+}
+.rightcol{
+  @include span-columns(8);
+  height: 600px;
 }
 
