@@ -2,6 +2,7 @@
 section.banner {
   background-color: white;
   @include chalkboard;
+  position: relative;
 
   header {
     @include centerPage;
@@ -30,6 +31,16 @@ section.banner {
         }
       }
     }
+    span {
+      color: $cGreen;
+      font-size: 2.5rem;
+      -webkit-transform: rotate(325deg);
+      -moz-transform: rotate(325deg);
+      -o-transform: rotate(325deg);
+      writing-mode: lr-tb;
+      float: left;
+      position: absolute;
+    }
 
     .welcome-container {
       display: block;
@@ -37,8 +48,10 @@ section.banner {
       margin: 0px auto;
       padding: 0;
       h2 {
-        font-size: 2em;
+        font-size: 4em;
+        text-align: center;
         margin: 0px auto;
+        color: #fff;
       }
       img {
         display: block;
@@ -47,119 +60,56 @@ section.banner {
         padding: 0;
       }
     }
-
     section.menu {
       @include outer-container;
       text-align: center;
-
-
-
+      margin: 2% auto;
+      h2 {
+        text-align: center;
+        text-decoration: underline;
+        color: #fff;
+        margin: 3% auto;
+      }
       ul {
         margin: 2% 0;
       }
-
       .breakfast{
         @include span-columns(6 of 12);
         color: $cBlue;
-        h4 {
-          font-size: 2.5em;
-        }
-        ul {
-          min-width: 400px;
-          margin: 0 auto;
-          li {
-            font-size: 1.5em;
-          }
-        }
       }
-
       .sandwiches {
         @include span-columns(6 of 12);
         @include omega();  
         display: inline-block;  
-        color: $cYellow;
-        h4 {
-          font-size: 2.5em;
-        }
-        li {
-          font-size: 1.5em;
-        }
+        color: $cYellow;     
       }
-
       .salads {
         @include span-columns(6 of 12);
         color: $cGreen;
-        h4 {
-          font-size: 2.5em;
-        }
-        li {
-          font-size: 1.5em;
-        }
       }
-
       .soup {
         @include span-columns(6 of 12);
         @include omega();
         color: $cPink;
-        ul {
-          display: inline-block;
-        }
-        h4 {
-          font-size: 2.5em;
-        }
-        li {
-          font-size: 1.5em;
-        }
       }
-
       .drinks {
         @include span-columns(6 of 12);
         color: $cBlue;
-        h4 {
-          font-size: 2.5em;
-        }
-        li {
-          font-size: 1.5em;
-        }
       }
-
       .toppings {
         @include span-columns(6 of 12);
         @include omega();
         color: $cYellow;
-        h4 {
-          font-size: 2.5em;
-        }
-        li {
-          font-size: 1.5em;
-        }
       }
-
       .desserts {
         @include span-columns(6 of 12);
         color: $cGreen;
-        h4 {
-          font-size: 2.5em;
-        }
-        li {
-          font-size: 1.5em;
-        }
       }
-
       .v-desserts {
         @include span-columns(6 of 12);
         @include omega();    
         color: $cPink;
-        h4 {
-          font-size: 2.5em;
-        }
-        li {
-          font-size: 1.5em;
-        }
       }
     }
   }
-
-
-
 }

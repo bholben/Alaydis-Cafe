@@ -1,3 +1,2 @@
-
-console.log('Hello from Spencer');
+_.templateSettings = { interpolate: /\{\{(.+?)\}\}/g };
 
