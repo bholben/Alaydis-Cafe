@@ -2,14 +2,50 @@
 section.contact {
   height: 600px;
   background-color: white;
-  @include outer-container;
+  width: 960px;
 }
 .leftcol {
   @include span-columns(4);
   height: 600px;
   font-size: medium;
+
+
+  ul.leftinfo {
+    max-width: 17.5em;
+    float: left;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+  }
+
+  ul.leftinfo li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . " 
+}
+ul.leftinfo span:first-child {
+    padding-right: 0.33em;
+    background: white
+
+}
+ul.leftinfo span + span {
+    padding-left: 0.33em;
+    background: white  
+
+}
+
+
+
+
+  
 }
 .rightcol{
+  float: right;
   @include span-columns(8);
   height: 600px;
 }
