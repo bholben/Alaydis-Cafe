@@ -69,7 +69,7 @@ section.banner {
     @include centerPage;
     height: 400px;
     @include chalkboard;
-    
+
     nav {
       li {
         margin: 0 5px;
@@ -115,8 +115,13 @@ section.banner {
 
 // Bob =========================================================================
 section.story {
-  height: 300px;
-  background-color: white;
+  height: 300px;               // TEMPORARY?
+  background-color: white;     // TEMPORARY?
+  font-size: 20px;
+  // white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 15px;
 }
 
 
@@ -166,7 +171,7 @@ section.menu {
 
 
 .option2 {
-  text-align: left; 
+  text-align: left;
   .breakfast2 {
     @include span-columns(12);
     color: $cBlue;
