@@ -42,6 +42,8 @@ body {
 h1, h2, h3, h4, h5 {
   //Spencer added 1/28/15
   font-family: 'Rock Salt', cursive;
+  margin: 0;
+  padding: 0;
 }
 
 ul, li, p, span, a {
@@ -73,12 +75,6 @@ section.banner {
   header {
     @include centerPage;
     height: 400px;
-<<<<<<< HEAD
-    
-=======
-    @include chalkboard;
-
->>>>>>> 797abea5ffe8cb661ee6a15be5a23673a4b3c6d8
     nav {
       li {
         margin: 0 5px;
@@ -92,7 +88,15 @@ section.banner {
       ul.social {
         float: right;
         li {
+          padding: 2px 0px;
           float: left;
+          img {
+            width: 20px;
+            &:hover {
+              background-color: white;
+              border-radius: 50%;
+            }
+          }
         }
       }
     }
@@ -150,7 +154,7 @@ section.menu {
   text-align: center;
 
   .breakfast{
-    @include span-columns(4 of 12);
+    @include span-columns(6 of 12);
     color: $cBlue;
 
     h4 {
@@ -161,8 +165,10 @@ section.menu {
       font-size: 1.5em;
     }
   }
-  .lunch {
-    @include span-columns(4 of 12);
+  .salads {
+    @include span-columns(6 of 12);
+    @include omega();
+
     color: $cPink;
 
     h4 {
@@ -174,7 +180,7 @@ section.menu {
     }
   }
   .dinner {
-    @include span-columns(3 of 12);
+    @include span-columns(4 of 12);
     color: $cYellow;
 
     h4 {
