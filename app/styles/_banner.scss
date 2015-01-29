@@ -1,0 +1,54 @@
+
+section.banner {
+  background-color: white;
+  @include chalkboard;
+
+  header {
+    @include centerPage;
+    height: 400px;
+    @include chalkboard;
+
+    nav {
+      li {
+        margin: 0 5px;
+      }
+      ul.nav {
+        float: left;
+        li {
+          float: left;
+        }
+      }
+      ul.social {
+        float: right;
+        li {
+          float: left;
+        }
+      }
+    }
+  }
+
+  .welcome-container {
+    display: block;
+    margin: 0px auto;
+    padding: 0;
+    h2 {
+      font-size: 2em;
+      margin: 0px auto;
+      text-align: center;
+      display: block;
+    }
+    img {
+      display: block;
+      width: 150px;
+      margin: 0px auto;
+      padding: 0;
+    }
+    h1 {
+      font-size: 4.5em;
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+}
+

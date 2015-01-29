@@ -1,0 +1,91 @@
+
+section.menu {
+  @include span-columns(12);
+  @include chalkboard;
+  // height: 1000px;
+  text-align: center;
+
+  .breakfast{
+    @include span-columns(4 of 12);
+    color: $cBlue;
+
+    h4 {
+      font-size: 2.5em;
+    }
+
+    li {
+      font-size: 1.5em;
+    }
+  }
+  .lunch {
+    @include span-columns(4 of 12);
+    color: $cPink;
+
+    h4 {
+      font-size: 2.5em;
+    }
+
+    li {
+      font-size: 1.5em;
+    }
+  }
+  .dinner {
+    @include span-columns(3 of 12);
+    color: $cYellow;
+
+    h4 {
+      font-size: 2.5em;
+    }
+
+    li {
+      font-size: 1.5em;
+    }
+  }
+
+
+.option2 {
+  text-align: left;
+  .breakfast2 {
+    @include span-columns(12);
+    color: $cBlue;
+
+    h4 {
+      font-size: 2.5em;
+    }
+
+    li {
+      font-size: 2em;
+    }
+  }
+  .lunch2 {
+    @include span-columns(12);
+    color: $cPink;
+
+    h4 {
+      font-size: 2.5em;
+    }
+
+    li {
+      font-size: 2em;
+    }
+  }
+  .dinner2 {
+    @include span-columns(12);
+    color: $cYellow;
+
+    h4 {
+      font-size: 2.5em;
+    }
+
+    li {
+      font-size: 2em;
+    }
+  }
+  }
+
+
+
+
+
+}
+

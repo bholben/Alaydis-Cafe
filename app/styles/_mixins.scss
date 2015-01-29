@@ -1,0 +1,14 @@
+
+@mixin centerPage() {
+  margin: 0 auto;
+  width: $pageWidth;
+  padding: 0 20px;
+}
+
+@mixin chalkboard() {
+  background-image: url("/images/alaydi_chalkboard.jpg");
+  border: 10px solid black;
+  border-radius: 2px;
+  color: $cYellow;
+}
+
