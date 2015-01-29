@@ -6,8 +6,6 @@ section.banner {
   header {
     @include centerPage;
     height: 400px;
-    @include chalkboard;
-
     nav {
       li {
         margin: 0 5px;
@@ -21,7 +19,15 @@ section.banner {
       ul.social {
         float: right;
         li {
+          padding: 2px 0px;
           float: left;
+          img {
+            width: 20px;
+            &:hover {
+              background-color: white;
+              border-radius: 50%;
+            }
+          }
         }
       }
     }
@@ -51,4 +57,3 @@ section.banner {
   }
 
 }
-
