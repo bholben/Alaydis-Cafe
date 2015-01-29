@@ -97,6 +97,7 @@ section.contact {
 .leftcol {
   @include span-columns(4);
   height: 600px;
+  font-size: medium;
 }
 .rightcol{
   @include span-columns(8);
