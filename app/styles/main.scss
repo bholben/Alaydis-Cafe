@@ -18,14 +18,14 @@ $cPink: #FFBFFB;
 
 // Mixins
 @mixin centerPage() {
-  margin: 0 auto;
+  margin: 0 auto; 
   width: $pageWidth;
   padding: 0 20px;
 }
 
 @mixin chalkboard() {
   background-image: url("/images/alaydi_chalkboard.jpg");
-  border: 8px solid black;
+  border: 10px solid black;
   border-radius: 2px;
   color: $cYellow;
 }
@@ -37,12 +37,15 @@ body {
   color: $cGray3;
   //Spencer added 1/28/15
   font-family: 'Gloria Hallelujah', cursive;
-
 }
 
 h1, h2, h3, h4, h5 {
   //Spencer added 1/28/15
   font-family: 'Rock Salt', cursive;
+}
+
+ul, li, p, span, a {
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 *:before, *:after { box-sizing: inherit; }
@@ -65,10 +68,11 @@ small { font-size: 12px; color: $cGray9; }
 // Spencer =====================================================================
 section.banner {
   background-color: white;
+  @include chalkboard;
+
   header {
     @include centerPage;
     height: 400px;
-    @include chalkboard;
     
     nav {
       li {
@@ -87,23 +91,31 @@ section.banner {
         }
       }
     }
+  }
 
+  .welcome-container {
+    display: block;
+    margin: 0px auto;
+    padding: 0;
     h2 {
-      font-size: 3em;
-      display: inline-block;
-      margin: 3% 0px 0px 0px;
+      font-size: 2em;
+      margin: 0px auto;
+      text-align: center;
+      display: block;
     }
     img {
-      width: 125px;
-      display: inline-block;
+      display: block;
+      width: 150px;
       margin: 0px auto;
+      padding: 0;
     }
     h1 {
-      font-size: 4em;
-      display: inline-block;
-      margin: 3% auto;
+      font-size: 4.5em;
+      text-align: center;
+      margin: 0;
     }
   }
+
 }
 
 // Bob =========================================================================
@@ -136,7 +148,7 @@ section.menu {
     }
 
     li {
-      font-size: 2em;
+      font-size: 1.5em;
     }
   }
   .lunch {
@@ -148,7 +160,7 @@ section.menu {
     }
 
     li {
-      font-size: 2em;
+      font-size: 1.5em;
     }
   }
   .dinner {
@@ -160,7 +172,7 @@ section.menu {
     }
 
     li {
-      font-size: 2em;
+      font-size: 1.5em;
     }
   }
 
