@@ -1,17 +1,25 @@
 
 section.blog {
   overflow: hidden;
-  background-color: white;     // TEMPORARY?
+  border-bottom: 1px solid $cGrayC;
+  margin-bottom: 30px;
   article {
     float: left;
     max-width: 50%;
     min-width: 300px;
-    // height: 300px;
     overflow: hidden;
     padding: 15px;
     font-size: 20px;
-    a:hover {
-      text-decoration: none;
+    a {
+      color: $cBlue;
+      &:hover {
+        text-decoration: none;
+        color: darken($cBlue, 25);
+      }
+      &:focus {
+        text-decoration: none;
+        color: darken($cBlue, 35);
+      }
     }
   }
 }
