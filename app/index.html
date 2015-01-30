@@ -11,7 +11,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css" />
+    <!-- <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css" /> -->
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -25,51 +25,30 @@
   <body>
 
     <section class="banner">  <!-- Spencer -->
-        
-
-        <header>
-
+      <header>
         <nav>
-        <!-- magellan -->
-          <div data-magellan-expedition="fixed">
-            <dl class="sub-nav">
-              <dd data-magellan-arrival="build"><a href="#build">Build with HTML</a></dd>
-              <dd data-magellan-arrival="js"><a href="#js">Arrival 2</a></dd>
-            </dl>
-          </div>
-
-          <ul class="nav">
-            <li><a href="#">Menu</li></a>
-            <li><a href="#">Reservations</li></a>
-            <li><a href="#">Hours & Directions</li></a>
-            <li><a href="#">Blog</li></a>
-          </ul>
-
           <ul class="social">
-            <li><a href="http://www.facebook.com"><img src="images/social/facebook_circle.png"></a></li>
+            <li><a href="http://www.facebook.com">
+            </a></li>
             <li><a href="http://www.plus.google.com"><img src="images/social/googleplus_circle.png"></a></li>
             <li><a href="http://www.twitter.com"><img src="images/social/twitter_circle.png"></a></li>
             <li><a href="http://www.pinterest.com"><img src="images/social/pinterest_circle.png"></a></li>
             <li><a href="http://www.instagram.com"><img src="images/social/instagram_circle.png"></a></li>
           </ul>
-        </nav>
-
-
-
-        <div class= "welcome-container">
-          <img src="images/final-logo.png">
-        </div>
-
-        <span>Check out our <br/>
-        Daily Special!</span>
-
-        
+        </nav>       
       </header>
+
+      <div class= "welcome-container">
+        <img src="images/final-logo.png">
+      </div>
+
     </section>
 
-    <section class="menu">  <!-- Spencer -->
-
-        <h2>Our Menu</h2>
+      <!-- Spencer -->
+    
+    <section class="menu">
+      
+      <h2>Our Menu</h2>
 
           <div class="breakfast">
             <h4>Breakfast</h4>
@@ -119,12 +98,6 @@
             </ul>
           </div>
         </section>
-
-<!-- magellan arrival -->
-<a name="arrival" id="build"></a>
-<h3 data-magellan-destination="arrival">Arrival</h3>
-<a name="destination"></a>
-<h3 data-magellan-destination="destination">Destination</h3>
 
     <div class="content">
 
@@ -191,20 +164,20 @@
            <!-- </div>-->
             
 
-            <div class="rightcol">
-              <iframe
-                  width="430"
-                  height="250"
-                  frameborder="0" style="border:0"
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3d2TDoBv5yRjjsRTuVZ1DgapTgmXQYKE
-                  &q=115 Martin Luther King Dr Se, Atlanta+Ga">
-              </iframe>
-            </div>
+        <div class="google-map">
+          <iframe
+              width="430"
+              height="250"
+              frameborder="0" style="border:0"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3d2TDoBv5yRjjsRTuVZ1DgapTgmXQYKE
+              &q=115 Martin Luther King Dr Se, Atlanta+Ga">
+          </iframe>
+        </div>
         
 
       </section>
 
-<!-- SPENCER EDITS BELOW -->      
+<!-- DISQUS PLUGIN -->      
 
       <div id="disqus_thread"></div>
       <script type="text/javascript">
@@ -218,11 +191,13 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
       </script>
+      
       <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <!-- DISQUS PLUGIN FINISH -->
       
       <div>
         <ul class="instagram-image-bar">
-          
         </ul>
       </div>
     
