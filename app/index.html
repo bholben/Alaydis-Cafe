@@ -11,6 +11,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -27,6 +28,14 @@
       <header>
 
         <nav>
+        <!-- magellan -->
+          <div data-magellan-expedition="fixed">
+            <dl class="sub-nav">
+              <dd data-magellan-arrival="build"><a href="#build">Build with HTML</a></dd>
+              <dd data-magellan-arrival="js"><a href="#js">Arrival 2</a></dd>
+            </dl>
+          </div>
+
           <ul class="nav">
             <li><a href="#">Menu</li></a>
             <li><a href="#">Reservations</li></a>
@@ -108,6 +117,10 @@
       </header>
     </section>
 
+<a name="arrival" id="build"></a>
+<h3 data-magellan-destination="arrival">Arrival</h3>
+<a name="destination"></a>
+<h3 data-magellan-destination="destination">Destination</h3>
 
     <div class="content">
 
@@ -270,9 +283,14 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="../bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <script src="../bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+    <script src="../bower_components/foundation/js/foundation.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
