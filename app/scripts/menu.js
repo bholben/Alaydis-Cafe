@@ -1,16 +1,16 @@
-{
-	"BREAKFAST": [
+var menu = {
+	"breakfast": [
 		{
-		"id": 15,
+		"id": 001,
 		"item": "Bagel & Egg",
 		"price": 2,
 		"description": "A Bagel and an Egg",
 		"favorite": 0,
 		"spicy": 0,
 		"vegan": 0
-		},
+		},		
 		{
-		"id": 18,
+		"id": 002,
 		"item": "Biscuit & Egg",
 		"price": 2,
 		"description": "A magnificent Biscuit filled with scrambled Egg",
@@ -18,9 +18,9 @@
 		"favorite": 1,
 		"spicy": 1,
 		"vegan": 0
-		},
+		},		
 		{
-		"id": 19,
+		"id": 003,
 		"item": "Bacon Biscuit",
 		"price": 3,
 		"description": "Succulent Bacon stuffed into a Biscuit",
@@ -28,9 +28,9 @@
 		"favorite": 0,
 		"spicy": 0,
 		"vegan": 1
-		},
+		},		
 		{
-		"id": 22,
+		"id": 004,
 		"item": "Chicken Biscuit",
 		"price": 3,
 		"description": "Tasty Chicken stuffed Biscuit",
@@ -38,9 +38,9 @@
 		"favorite": 1,
 		"spicy": 0,
 		"vegan": 1
-		},
+		},		
 		{
-		"id": 23,
+		"id": 005,
 		"item": "Ham Biscuit",
 		"price": 3,
 		"description": "Delicious Ham on a Biscuit",
@@ -48,9 +48,9 @@
 		"favorite": 1,
 		"spicy": 0,
 		"vegan": 0 
-		},	
+		},		
 		{
-		"id": 24,
+		"id": 006,
 		"item": "Turkey Bacon Biscuit",
 		"price": 3,
 		"description": "Nothing better than Turkey and Bacon on a Biscuit",
@@ -58,9 +58,9 @@
 		"favorite": 1,
 		"spicy": 0,
 		"vegan": 0
-		},
+		},		
 		{
-		"id": 25,
+		"id": 007,
 		"item": "French Toast",
 		"price": 6,
 		"description": "Toast made in France",
@@ -68,9 +68,9 @@
 		"favorite": 0,
 		"spicy": 0,
 		"vegan": 0
-		},
+		},		
 		{
-		"id": 28,
+		"id": 008,
 		"item": "Salmon Croquettes",
 		"price": 6,
 		"description": "Salmon on a Croquette",
@@ -80,7 +80,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 33,
+		"id": 009,
 		"item": "Chicken & Waffles",
 		"price": 8,
 		"description": "like it says, Chicken and Waffles",
@@ -90,7 +90,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 4,
+		"id": 010,
 		"item": "French Toast Combo",
 		"price": 8,
 		"description": "French Toast, 2 eggs, hash browns, 2pc bacon/sausage",
@@ -101,11 +101,10 @@
 		},
 	],
 
-"SANDWICHES": [
-	
+"sandwiches": [	
 
 		{
-		"id": 9,
+		"id": 011,
 		"item": "Peantbutter & Jelly",
 		"price": 4,
 		"description": "Peanutbutter with Jelly and/or Bananas & Honey",
@@ -115,7 +114,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 3,
+		"id": 012,
 		"item": "Egg Salad",
 		"price": 4,
 		"description": "Egg Salad",
@@ -125,7 +124,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 6,
+		"id": 013,
 		"item": "Vera's Fried Beef Lettuce Slaw",
 		"price": 8,
 		"description": "",
@@ -135,7 +134,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 65,
+		"id": 014,
 		"item": "Honey Maple Ham",
 		"price": 8,
 		"description": "Honey Maple Ham",
@@ -145,7 +144,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 66,
+		"id": 015,
 		"item": "Lemon Pepper Chicken",
 		"price": 8,
 		"description": "Lemon Pepper Chicken",
@@ -155,7 +154,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 67,
+		"id": 016,
 		"item": "Spicey Turkey",
 		"price": 8,
 		"description": "Spicey Turkey",
@@ -165,7 +164,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 68,
+		"id": 017,
 		"item": "Chicken Salad",
 		"price": 8,
 		"description": "Chicken Salad",
@@ -175,7 +174,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 69,
+		"id": 018,
 		"item": "Tuna Salad",
 		"price": 8,
 		"description": "Tuna Salad",
@@ -185,7 +184,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 70,
+		"id": 019,
 		"item": "Chicken Sausage",
 		"price": 8,
 		"description": "Chicken Sausage with coleslaw",
@@ -195,7 +194,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 69,
+		"id": 020,
 		"item": "London Broil",
 		"price": 10,
 		"description": "London Broil",
@@ -208,9 +207,9 @@
 	],
 
 
-"TOPPINGS & EXTRAS": [
+"toppings": [
 		{
-		"id": 70,
+		"id": 021,
 		"item": "Cheese",
 		"price": 1,
 		"description": "Cheese",
@@ -220,7 +219,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 71,
+		"id": 022,
 		"item": "Bacon",
 		"price": 1,
 		"description": "Bacon",
@@ -230,7 +229,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 72,
+		"id": 023,
 		"item": "Avocado",
 		"price": 2,
 		"description": "Avacado",
@@ -240,7 +239,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 73,
+		"id": 024,
 		"item": "Chicken",
 		"price": 3,
 		"description": "Chicken",
@@ -251,10 +250,10 @@
 		},
 	],
 
-	"SIDES": [
+	"sides": [
 	
 		{
-		"id": 74,
+		"id": 025,
 		"item": "Biscuit with Gravy",
 		"price": 2,
 		"description": "Biscuit with Gravy",
@@ -264,7 +263,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 75,
+		"id": 026,
 		"item": "Grits",
 		"price": 2,
 		"description": "Grits",
@@ -272,9 +271,9 @@
 		"favorite": 0,
 		"spicy": 0,
 		"vegan": 0
-		}
+		},
 		{
-		"id": 76,
+		"id": 027,
 		"item": "Hash Browns",
 		"price": 2,
 		"description": "Hash Browns",
@@ -284,7 +283,7 @@
 		"vegan": 0,
 		},
 		{
-		"id": 77,
+		"id": 028,
 		"item": "Fruit Bowl",
 		"price": 3,
 		"description": "Fruit Bowl",
@@ -292,12 +291,12 @@
 		"favorite": 0,
 		"spicy": 0,
 		"vegan": 0
-		},
+		}
 	],
 
-"SALADS": [
+"salads": [
 		{
-		"id": 78,
+		"id": 029,
 		"item": "Side Salad",
 		"price": 3,
 		"description": "Side Salad",
@@ -307,7 +306,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 79,
+		"id": 030,
 		"item": "House Salad",
 		"price": 6,
 		"description": "House Salad",
@@ -317,7 +316,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 80,
+		"id": 031,
 		"item": "Chicken Caesar Salad",
 		"price": 7,
 		"description": "Chiken Caesar Salad",
@@ -327,7 +326,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 81,
+		"id": 032,
 		"item": "Chef Salad",
 		"price": 7,
 		"description": "Chef Salad",
@@ -337,7 +336,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 82,
+		"id": 033,
 		"item": "Grilled Chicken Salad",
 		"price": 7,
 		"description": "Grilled Chicken Salad",
@@ -347,34 +346,35 @@
 		"vegan": 0
 		},
 		{
-		"id": 83,
+		"id": 034,
 		"item": "Chopped Salad",
 		"price": 9,
 		"description": "Chopped Salad with Turkey,Ham, and Pastrami",
-		"allergies": 0
-		"favorite": 0,,
+		"allergies": 0,
+		"favorite": 0,
 		"spicy": 0,
 		"vegan": 0
-		},
+		}
+	],
 		
 
-"SOUP OF THE DAY": [
+"soups": [
 
 		{
-		"id": 84,
+		"id": 035,
 		"item": "Baked Potato",
 		"price": {
 			"cup": 3,
 			"bowl": 5
 		},
 		"description": "Baked Potato",
-		"allergies": 0
+		"allergies": 0,
 		"favorite": 0,
 		"spicy": 0,
 		"vegan": 0
 		},
 		{
-		"id": 85,
+		"id": 036,
 		"item": "Broccoli & Cheddar",
 		"price": {
 			"cup": 3,
@@ -387,7 +387,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 86,
+		"id": 037,
 		"item": "Chicken Noodle",
 		"price": {
 			"cup": 3,
@@ -400,7 +400,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 88,
+		"id": 038,
 		"item": "Tortilla",
 		"price": {
 			"cup": 3,
@@ -413,7 +413,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 89,
+		"id": 039,
 		"item": "Turkey Chili",
 		"price": {
 			"cup": 3,
@@ -421,7 +421,7 @@
 
 		},
 		"description": "Turkey Chili",
-		"allergies": 0
+		"allergies": 0,
 		"favorite": 0,
 		"spicy": 0,
 		"vegan": 0
@@ -429,9 +429,9 @@
 
 ],
 
-"DRINKS": [
+"drinks": [
 		{
-		"id": 90
+		"id": 040,
 		"item": "Bottled Water",
 		"price": 1,
 		"description": "Bottled Water",
@@ -441,7 +441,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 91,
+		"id": 041,
 		"item": "Canned Soda",
 		"price": 1,
 		"description": "Canned Soda",
@@ -451,7 +451,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 92,
+		"id": 042,
 		"item": "Peach Tea",
 		"price": 2,
 		"description": "Peach Tea",
@@ -461,7 +461,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 93,
+		"id": 043,
 		"item": "Sweet Tea",
 		"price": 2,
 		"description": "Sweet Tea",
@@ -471,13 +471,12 @@
 		"vegan": 0
 		},
 		{
-		"id": 94,
+		"id": 044,
 		"item": "Coffee",
 		"price": {
 			"small": 1,
 			"large:": 2
-
-		},
+			},
 		"description": "Coffee",
 		"allergies": 0,
 		"favorite": 0,
@@ -485,7 +484,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 95,
+		"id": 045,
 		"item": "Espresso",
 		"price": 4.5,
 		"description": "Espresso",
@@ -496,11 +495,11 @@
 		},
 ],
 
-"Desserts": [
+"desserts": [
 
 		{
-		"id": 96,
-		"item": "(3) Chocolate Chip/Oatmeal Raisin Cookies",
+		"id": 046,
+		"item": "(3) Chocolate Chip Cookies",
 		"price": 1,
 		"description": "Chocolate Chip/Oatmeal Raisin Cookies",
 		"allergies": 0,
@@ -509,7 +508,17 @@
 		"vegan": 0
 		},
 		{
-		"id": 97,
+		"id": 047,
+		"item": "(3) Oatmeal Raisin Cookies",
+		"price": 1,
+		"description": "Chocolate Chip/Oatmeal Raisin Cookies",
+		"allergies": 0,
+		"favorite": 0,
+		"spicy": 0,
+		"vegan": 0
+		},
+		{
+		"id": 048,
 		"item": "Banana Pudding",
 		"price": 4,
 		"description": "Banana Pudding",
@@ -519,7 +528,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 98,
+		"id": 049,
 		"item": "Bread Pudding",
 		"price": 4,
 		"description": "Bread Pudding",
@@ -529,7 +538,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 99,
+		"id": 050,
 		"item": "Cheesecake",
 		"price": 4,
 		"description": "Cheesecake",
@@ -539,7 +548,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 100,
+		"id": 051,
 		"item": "Key Lime Pie",
 		"price": 4,
 		"description": "Key Lime Pie",
@@ -549,23 +558,22 @@
 		"vegan": 0
 		},
 
-
-
 ],
 
-"VERA'S DESSERTS": {
-		"id": 101,
+"veraDesserts": [
+		{		
+		"id": 052,
 		"item": "Red Velvet Cupcakes",
 		"price": 4,
-		"description":, "Red Velvet Cupcakes",
-		"allergies": 0
+		"description": "Red Velvet Cupcakes",
+		"allergies": 0,
 		"favorite": 0,
 		"spicy": 0,
 		"vegan": 0
 
 		},
 		{
-		"id": 102,
+		"id": 053,
 		"item": "Sweet Potato Pie",
 		"price": 4,
 		"description": "Sweet Potato Pie",
@@ -575,7 +583,7 @@
 		"vegan": 0
 		},
 		{
-		"id": 103,
+		"id": 054,
 		"item": "Pecan Pie",
 		"price": 4,
 		"description": "Pecan Pie",
@@ -584,8 +592,8 @@
 		"spicy": 0,
 		"vegan": 0
 		},
-
-		"id": 104,
+		{
+		"id": 055,
 		"item": "Buttermilk Pie",
 		"price": 4,
 		"description": "Buttermilk Pie",
@@ -594,7 +602,7 @@
 		"spicy": 0,
 		"vegan": 0
 		},
-],
+]
 
 }
 

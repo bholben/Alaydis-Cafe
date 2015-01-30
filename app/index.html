@@ -57,110 +57,83 @@
           
         <h2>Our Menu</h2>
         
-        <script type="text/template" id="user-template">
-
+        
           <div class="breakfast">
             <h4>Breakfast</h4>
-            <ul>
-              <li>Bagel & Egg ..... 2</li>
-              <li>Biscuit & Egg ..... 2</li>
-              <li>Bacon Biscuit ..... 3 </li>
-              <li>Chicken Biscuit ..... 3</li>
-              <li>Ham Biscuit ..... 3</li>
-              <li>Turkey Bacon Biscuit ..... 3</li>
-              <li>French Toast ..... 6</li>
-              <li>Salmon Croquettes ..... 6</li>
-              <li>Chicken & Waffles ..... 8</li>
-              <li>French Toast Combo ..... 8</li>
+            <ul class = "breakfast-items">
             </ul>
           </div>
 
           <div class="sandwiches">
             <h4>Sandwiches</h4>
-            <ul>
-              <li>Peanut Butter & Jelly ..... 4</li>
-              <li>Egg Salad ..... 4</li>
-              <li>Veras Fried Beef Lettuce Slaw ..... 8</li>
-              <li>Honey Maple Ham .... 8</li>
-              <li>Lemon Pepper Chicken .... 8</li>
-              <li>Spicy Turkey .... 8</li>
-              <li>Chicken Salad Sandwich .... 8</li>
-              <li>Tuna Salad Sandwich .... 8</li>
-              <li>Chicken Sausage .... 8</li>
-              <li>London Broil .... 10</li>
+            <ul class = "sandwich-items">
             </ul>
           </div>
 
           <div class="salads">
             <h4>Salads</h4>
-            <ul>
-              <li>Side Salad ..... 3</li>
-              <li>House Salad ..... 6</li>
-              <li>Chicken Caesar Salad ..... 7</li>
-              <li>Chef Salad ..... 7</li>
-              <li>Grilled Chicken Salad ..... 7</li>
-              <li>Chopped Salad ..... 9</li>
+            <ul class = "salad-items">
             </ul>
           </div>        
 
           <div class="soup">
             <h4>Soup of the Day</h4>
-            <ul>
-              <li>Baked Potato ..... 3</li>
+            <ul class="soup-items">
+             <!--  <li>Baked Potato ..... 3</li>
               <li>Broccoli & Cheddar ..... 3</li>
               <li>Chicken Noodle ..... 3</li>
               <li>Tortilla ..... 3</li>
-              <li>Turkey Chili ..... 3</li>
+              <li>Turkey Chili ..... 3</li> -->
             </ul>
           </div>
 
           <div class="drinks">
             <h4>Drinks</h4>
-            <ul>
-              <li>Bottled Water ..... 1</li>
+            <ul class="drink-items">
+             <!--  <li>Bottled Water ..... 1</li>
               <li>Canned Soda ..... 1</li>
               <li>Peach Tea ..... 2</li>
               <li>Sweet Tea ..... 2</li>
               <li>Coffee ..... 2</li>
-              <li>Espresso ..... 4.5</li>
+              <li>Espresso ..... 4.5</li> -->
             </ul>
           </div>
 
           <div class="toppings">
             <h4>Toppings & Extras</h4>
-            <ul>
-              <li>Cheese ..... 1</li>
+            <ul class="topping-items">
+             <!--  <li>Cheese ..... 1</li>
               <li>Bacon ..... 1</li>
               <li>Avocado ..... 2</li>
-              <li>Chicken ..... 3</li>
+              <li>Chicken ..... 3</li> -->
             </ul>
           </div>
 
           <div class="desserts">
             <h4>Desserts</h4>
-            <ul>
-              <li>(3) Chocolate Chip Cookies ..... 1</li>
+            <ul class="dessert-items">
+             <!--  <li>(3) Chocolate Chip Cookies ..... 1</li>
               <li>(3) Oatmeal Cookies ..... 1</li>
               <li>Banana Pudding ..... 4</li>
               <li>Bread Pudding ..... 4</li>
               <li>Cheesecake ..... 4</li>
-              <li>Key Lime Pie ..... 4</li>
+              <li>Key Lime Pie ..... 4</li> -->
             </ul>
           </div>
 
           <div class="v-desserts">
-            <h4>Vera's Desserts</h4>
-            <ul>
-              <li>Red Velvet Cupcakes ..... 4</li>
+            <h4>Veras Desserts</h4>
+            <ul class="v-dessert-items">
+              <!-- <li>Red Velvet Cupcakes ..... 4</li>
               <li>Sweet Potato Pie ..... 4</li>
               <li>Pecan Pie ..... 4</li>
-              <li>Buttermilk Pie ..... 4</li>
+              <li>Buttermilk Pie ..... 4</li> -->
             </ul>
           </div>
 
         </script>
 
-          <div class="breakfast">
+<!--           <div class="breakfast">
             <h4>Breakfast</h4>
             <ul>
               <li>Bagel & Egg ..... 2</li>
@@ -258,7 +231,7 @@
               <li>Buttermilk Pie ..... 4</li>
             </ul>
           </div>
-        </section>
+        </section> -->
 
       </header>
 
@@ -321,6 +294,19 @@
 
     </div>
 
+  <!-- JS Templates -->
+  <script type="text/template" id="menu-template">
+        <li>{{item}} ..... {{price}}</li>
+  </script>
+
+  <script type="text/template" id="soups-template">
+        <li>{{item}} ..... {{price.cup}}, {{price.bowl}}</li>
+  </script>
+
+  <script type="text/template" id="coffee-template">
+        <li>{{item}} ..... {{price.small}}, {{price.large}}</li>
+  </script>
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -330,6 +316,7 @@
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
+        <script src="scripts/menu.js"></script>
         <script src="scripts/blogs_data.js"></script>
         <script src="scripts/john.js"></script>
         <script src="scripts/spencer.js"></script>
