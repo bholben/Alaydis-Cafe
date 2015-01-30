@@ -1,11 +1,19 @@
 
-section.story {
-  height: 300px;               // TEMPORARY?
-  background-color: white;     // TEMPORARY?
-  font-size: 20px;
-  // white-space: nowrap;
+section.blog {
   overflow: hidden;
-  text-overflow: ellipsis;
-  padding: 15px;
+  background-color: white;     // TEMPORARY?
+  article {
+    float: left;
+    max-width: 50%;
+    min-width: 300px;
+    // height: 300px;
+    overflow: hidden;
+    padding: 15px;
+    font-size: 20px;
+    a:hover {
+      text-decoration: none;
+    }
+  }
 }
+
 

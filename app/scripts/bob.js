@@ -1,25 +1,49 @@
 
+// Change template engine settings to use {{ }} syntax.
+_.templateSettings = { interpolate: /\{\{(.+?)\}\}/g };
 
-// Request the blog data for "Our Story" and receive a promise back...
-$.getJSON('http://baconipsum.com/api/?type=meat-and-filler&start-with-lorem=1')
+
+var clampText = function (text, chars) {
+  chars = chars || 115;
+  return text.slice(0, chars) + '&hellip; <a href="#">Read More</a>';
+};
+
+$('.story-leader').prepend(clampText(storyText, 160));
+
+var fullNewsPost;
+
+// Snag the template from the markup and convert to a function that can
+// accept input data.
+var latestNewsTemplate = _.template($('#latestNewsTemplate').html());
+
+// Request latest news data from API and receive a promise back...
+$.getJSON('http://private-anon-eafb492e3-restaurantapi.apiary-mock.com/news/latest')
 
 // Run a spinner setTimeout here...
 .always()
 
-// Promise resolved successfully...
+// Promise resolution successful...
 .done(function (data) {
-  $('section.story').append('<h2>Our Story</h2>' + data);
+
+  fullNewsPost = data.post;
+  data.post = clampText(data.post, 105);
+
+  $('article.news h2').after(latestNewsTemplate(data));
   // Turn off the spinner
 })
 
 // Promise resolution failed...
-.fail(function (jqXHR, textStatus, errorThrown) {
-  console.log(jqXHR);
-  console.log(textStatus);
-  console.log(errorThrown);
+.fail(function (jqXHR) {
+  var msg = 'Error retrieving data from server. ';
+  $('article.news').prepend(msg);
+  console.log(msg + jqXHR.statusText);
   // Turn off the spinner
 });
 
-// var ourStory = _.findWhere(blogs, {'title': 'Our Story'});
-// $('section.story').append(ourStory.text);
+
+$('.blog').on('click', 'article a', function (e) {
+  e.preventDefault();
+  console.log(e);
+  console.log(e.target.parentNode);
+});
 

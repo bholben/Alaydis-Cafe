@@ -33,6 +33,7 @@ $('.soup-items').append(_.template($('#soups-template').text())(food));
 drinks.forEach(function (food) {
 	$('.drink-items').append(_.template($('#menu-template').text())(food));
 });
+
 // drinks.forEach(function (food) {
 // 	if (food.item = "Coffee") { 
 // 		$('.drink-items').append(_.template($('#coffee-template').text())(food));
