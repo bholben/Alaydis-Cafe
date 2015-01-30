@@ -2,10 +2,10 @@
 section.banner {
   background-color: white;
   @include chalkboard;
+  position: relative;
 
   header {
     @include centerPage;
-    height: 400px;
     nav {
       li {
         margin: 0 5px;
@@ -31,29 +31,85 @@ section.banner {
         }
       }
     }
-  }
-
-  .welcome-container {
-    display: block;
-    margin: 0px auto;
-    padding: 0;
-    h2 {
-      font-size: 2em;
-      margin: 0px auto;
-      text-align: center;
-      display: block;
+    span {
+      color: $cGreen;
+      font-size: 2.5rem;
+      -webkit-transform: rotate(325deg);
+      -moz-transform: rotate(325deg);
+      -o-transform: rotate(325deg);
+      writing-mode: lr-tb;
+      float: left;
+      position: absolute;
     }
-    img {
+
+    .welcome-container {
       display: block;
-      width: 150px;
+      width: 75%;
       margin: 0px auto;
       padding: 0;
+      h2 {
+        font-size: 4em;
+        text-align: center;
+        margin: 0px auto;
+        color: #fff;
+      }
+      img {
+        display: block;
+        width: 350px;
+        margin: 0px auto;
+        padding: 0;
+      }
     }
-    h1 {
-      font-size: 4.5em;
+    section.menu {
+      @include outer-container;
       text-align: center;
-      margin: 0;
+      margin: 2% auto;
+      h2 {
+        text-align: center;
+        text-decoration: underline;
+        color: #fff;
+        margin: 3% auto;
+      }
+      ul {
+        margin: 2% 0;
+      }
+      .breakfast{
+        @include span-columns(6 of 12);
+        color: $cBlue;
+      }
+      .sandwiches {
+        @include span-columns(6 of 12);
+        @include omega();  
+        display: inline-block;  
+        color: $cYellow;     
+      }
+      .salads {
+        @include span-columns(6 of 12);
+        color: $cGreen;
+      }
+      .soup {
+        @include span-columns(6 of 12);
+        @include omega();
+        color: $cPink;
+      }
+      .drinks {
+        @include span-columns(6 of 12);
+        color: $cBlue;
+      }
+      .toppings {
+        @include span-columns(6 of 12);
+        @include omega();
+        color: $cYellow;
+      }
+      .desserts {
+        @include span-columns(6 of 12);
+        color: $cGreen;
+      }
+      .v-desserts {
+        @include span-columns(6 of 12);
+        @include omega();    
+        color: $cPink;
+      }
     }
   }
-
 }

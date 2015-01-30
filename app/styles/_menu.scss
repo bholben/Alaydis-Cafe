@@ -1,86 +1,106 @@
-section.menu {
-  @include span-columns(12);
-  @include chalkboard;
-  // height: 1000px;
-  text-align: center;
+// section.menu {
+//   @include span-columns(12);
+//   @include outer-container;
+//   @include chalkboard;
+//   // height: 1000px;
+//   text-align: center;
 
-  .breakfast{
-    @include span-columns(6 of 12);
-    color: $cBlue;
+//   .breakfast{
+//     @include span-columns(6 of 12);
+//     color: $cBlue;
+//     h4 {
+//       font-size: 2.5em;
+//     }
+//     ul {
+//       min-width: 400px;
+//       margin: 0 auto;
+//       li {
+//         font-size: 1.5em;
+//       }
+//     }
+//   }
 
-    h4 {
-      font-size: 2.5em;
-    }
+//   .sandwiches {
+//     @include span-columns(6 of 12);
+//     @include omega();    
+//     color: $cYellow;
+//     h4 {
+//       font-size: 2.5em;
+//     }
+//     li {
+//       font-size: 1.5em;
+//     }
+//   }
 
-    li {
-      font-size: 1.5em;
-    }
-  }
-  .salads {
-    @include span-columns(6 of 12);
-    @include omega();
+//   .salads {
+//     @include span-columns(6 of 12);
+//     color: $cPink;
+//     h4 {
+//       font-size: 2.5em;
+//     }
+//     li {
+//       font-size: 1.5em;
+//     }
+//   }
 
-    color: $cPink;
+//   .soup {
+//     @include span-columns(6 of 12);
+//     @include omega();
+//     color: $cPink;
+//     ul {
+//       display: inline-block;
+//     }
+//     h4 {
+//       font-size: 2.5em;
+//     }
+//     li {
+//       font-size: 1.5em;
+//     }
+//   }
 
-    h4 {
-      font-size: 2.5em;
-    }
+//   .drinks {
+//     @include span-columns(6 of 12);
+//     color: $cPink;
+//     h4 {
+//       font-size: 2.5em;
+//     }
+//     li {
+//       font-size: 1.5em;
+//     }
+//   }
 
-    li {
-      font-size: 1.5em;
-    }
-  }
-  .dinner {
-    @include span-columns(4 of 12);
-    color: $cYellow;
+//   .toppings {
+//     @include span-columns(6 of 12);
+//     @include omega();
+//     color: $cPink;
+//     h4 {
+//       font-size: 2.5em;
+//     }
+//     li {
+//       font-size: 1.5em;
+//     }
+//   }
 
-    h4 {
-      font-size: 2.5em;
-    }
+//   .desserts {
+//     @include span-columns(6 of 12);
+//     color: $cPink;
+//     h4 {
+//       font-size: 2.5em;
+//     }
+//     li {
+//       font-size: 1.5em;
+//     }
+//   }
 
-    li {
-      font-size: 1.5em;
-    }
-  }
-
-
-.option2 {
-  text-align: left;
-  .breakfast2 {
-    @include span-columns(12);
-    color: $cBlue;
-
-    h4 {
-      font-size: 2.5em;
-    }
-
-    li {
-      font-size: 2em;
-    }
-  }
-  .lunch2 {
-    @include span-columns(12);
-    color: $cPink;
-
-    h4 {
-      font-size: 2.5em;
-    }
-
-    li {
-      font-size: 2em;
-    }
-  }
-  .dinner2 {
-    @include span-columns(12);
-    color: $cYellow;
-
-    h4 {
-      font-size: 2.5em;
-    }
-
-    li {
-      font-size: 2em;
-    }
-  }
-  }
-}
+//   .v-desserts {
+//     @include span-columns(6 of 12);
+//     @include omega();    
+//     color: $cPink;
+//     h4 {
+//       font-size: 2.5em;
+//     }
+//     li {
+//       font-size: 1.5em;
+//     }
+//   }
+// }

@@ -1,25 +1,66 @@
 
+// Change template engine settings to use {{ }} syntax.
+_.templateSettings = { interpolate: /\{\{(.+?)\}\}/g };
 
-// Request the blog data for "Our Story" and receive a promise back...
-$.getJSON('http://baconipsum.com/api/?type=meat-and-filler&start-with-lorem=1')
 
-// Run a spinner setTimeout here...
-.always()
+var fullNewsPost,
+    shortStoryText,
+    latestNewsTemplate;
 
-// Promise resolved successfully...
+var clampText = function (text, chars) {
+  chars = chars || 100;
+  return text.slice(0, chars) + '&hellip; <a href="#" class="expand">Show More</a>';
+};
+
+// Add story text.
+shortStoryText = clampText(storyText, 160);
+$('.story div').append(shortStoryText);
+
+
+// Snag the template from the markup and convert to a function that can
+// accept input data.
+latestNewsTemplate = _.template($('#latestNewsTemplate').html());
+
+// Request latest news data from API and receive a promise back.
+// Act on whatever is returned from the promise.
+$.getJSON('http://private-anon-eafb492e3-restaurantapi.apiary-mock.com/news/latest')
 .done(function (data) {
-  $('section.story').append('<h2>Our Story</h2>' + data);
-  // Turn off the spinner
+  fullNewsPost = data.post + ' <a href="#" class="collapse">Show Less</a>';
+  shortNewsPost = data.post = clampText(data.post, 105);
+  $('article.news h2').after(latestNewsTemplate(data));
 })
-
-// Promise resolution failed...
-.fail(function (jqXHR, textStatus, errorThrown) {
-  console.log(jqXHR);
-  console.log(textStatus);
-  console.log(errorThrown);
-  // Turn off the spinner
+.fail(function (jqXHR) {
+  var msg = 'Error retrieving data from server. ';
+  $('article.news').prepend(msg);
+  console.log(msg + jqXHR.statusText);
 });
 
-// var ourStory = _.findWhere(blogs, {'title': 'Our Story'});
-// $('section.story').append(ourStory.text);
+
+// Expand article if "Show More" is clicked.
+$('.blog').on('click', 'article a.expand', function (e) {
+  e.preventDefault();
+  var isStory = $(e.target).parents().filter('article').hasClass('story');
+  if (isStory) {
+    $('article.story p').html(storyText);
+  } else {
+    $('article.news p').html(fullNewsPost);
+  }
+});
+
+
+// // Collapse article if "Show Less" is clicked.
+// $('.blog').on('click', 'article a.collapse', function (e) {
+//   e.preventDefault();
+//   var isStory = $(e.target).parents().filter('article').hasClass('story');
+//   if (isStory) {
+//     $('article.story p').html(shortStoryText);
+//   } else {
+//     $('article.news p').html(shortNewsPost);
+//   }
+// });
+
+
+
+
+
 

@@ -1,6 +1,6 @@
 @mixin centerPage() {
   margin: 0 auto; 
-  width: $pageWidth;
+  max-width: $pageWidth;
   padding: 0 20px;
 }
 

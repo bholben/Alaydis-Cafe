@@ -18,103 +18,267 @@
 
     <section class="banner">  <!-- Spencer -->
       <header>
-        <nav>
 
+        <nav>
           <ul class="nav">
-            <li>Menu</li>
-            <li>Reservations</li>
-            <li>Hours & Directions</li>
-            <li>Blog</li>
+            <li><a href="#">Menu</li></a>
+            <li><a href="#">Reservations</li></a>
+            <li><a href="#">Hours & Directions</li></a>
+            <li><a href="#">Blog</li></a>
           </ul>
 
           <ul class="social">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Pinterest</a></li>
-            <li><a href="#">Instagram</a></li>
+            <li><a href="http://www.facebook.com"><img src="images/social/facebook_circle.png"></a></li>
+            <li><a href="http://www.plus.google.com"><img src="images/social/googleplus_circle.png"></a></li>
+            <li><a href="http://www.twitter.com"><img src="images/social/twitter_circle.png"></a></li>
+            <li><a href="http://www.pinterest.com"><img src="images/social/pinterest_circle.png"></a></li>
+            <li><a href="http://www.instagram.com"><img src="images/social/instagram_circle.png"></a></li>
           </ul>
-
         </nav>
 
-      <div class= "welcome-container">
-        <h2>Welcome to</h2>
-        <img src="images/sample_logo_temp.png">
-        <h1>Alaydi's Cafe</h1>
-      </div>
+
+
+        <div class= "welcome-container">
+          <h2>Welcome to</h2>
+          <img src="images/logo-hipster.png">
+        </div>
+
+        <span>Check out our <br/>
+        Daily Special!</span>
+
+        <section class="menu">  <!-- Spencer -->
+
+        <h2>Our Menu</h2>
+
+        <script type="text/template" id="user-template">
+
+          <div class="breakfast">
+            <h4>Breakfast</h4>
+            <ul>
+              <li>Bagel & Egg ..... 2</li>
+              <li>Biscuit & Egg ..... 2</li>
+              <li>Bacon Biscuit ..... 3 </li>
+              <li>Chicken Biscuit ..... 3</li>
+              <li>Ham Biscuit ..... 3</li>
+              <li>Turkey Bacon Biscuit ..... 3</li>
+              <li>French Toast ..... 6</li>
+              <li>Salmon Croquettes ..... 6</li>
+              <li>Chicken & Waffles ..... 8</li>
+              <li>French Toast Combo ..... 8</li>
+            </ul>
+          </div>
+
+          <div class="sandwiches">
+            <h4>Sandwiches</h4>
+            <ul>
+              <li>Peanut Butter & Jelly ..... 4</li>
+              <li>Egg Salad ..... 4</li>
+              <li>Veras Fried Beef Lettuce Slaw ..... 8</li>
+              <li>Honey Maple Ham .... 8</li>
+              <li>Lemon Pepper Chicken .... 8</li>
+              <li>Spicy Turkey .... 8</li>
+              <li>Chicken Salad Sandwich .... 8</li>
+              <li>Tuna Salad Sandwich .... 8</li>
+              <li>Chicken Sausage .... 8</li>
+              <li>London Broil .... 10</li>
+            </ul>
+          </div>
+
+          <div class="salads">
+            <h4>Salads</h4>
+            <ul>
+              <li>Side Salad ..... 3</li>
+              <li>House Salad ..... 6</li>
+              <li>Chicken Caesar Salad ..... 7</li>
+              <li>Chef Salad ..... 7</li>
+              <li>Grilled Chicken Salad ..... 7</li>
+              <li>Chopped Salad ..... 9</li>
+            </ul>
+          </div>
+
+          <div class="soup">
+            <h4>Soup of the Day</h4>
+            <ul>
+              <li>Baked Potato ..... 3</li>
+              <li>Broccoli & Cheddar ..... 3</li>
+              <li>Chicken Noodle ..... 3</li>
+              <li>Tortilla ..... 3</li>
+              <li>Turkey Chili ..... 3</li>
+            </ul>
+          </div>
+
+          <div class="drinks">
+            <h4>Drinks</h4>
+            <ul>
+              <li>Bottled Water ..... 1</li>
+              <li>Canned Soda ..... 1</li>
+              <li>Peach Tea ..... 2</li>
+              <li>Sweet Tea ..... 2</li>
+              <li>Coffee ..... 2</li>
+              <li>Espresso ..... 4.5</li>
+            </ul>
+          </div>
+
+          <div class="toppings">
+            <h4>Toppings & Extras</h4>
+            <ul>
+              <li>Cheese ..... 1</li>
+              <li>Bacon ..... 1</li>
+              <li>Avocado ..... 2</li>
+              <li>Chicken ..... 3</li>
+            </ul>
+          </div>
+
+          <div class="desserts">
+            <h4>Desserts</h4>
+            <ul>
+              <li>(3) Chocolate Chip Cookies ..... 1</li>
+              <li>(3) Oatmeal Cookies ..... 1</li>
+              <li>Banana Pudding ..... 4</li>
+              <li>Bread Pudding ..... 4</li>
+              <li>Cheesecake ..... 4</li>
+              <li>Key Lime Pie ..... 4</li>
+            </ul>
+          </div>
+
+          <div class="v-desserts">
+            <h4>Veras Desserts</h4>
+            <ul>
+              <li>Red Velvet Cupcakes ..... 4</li>
+              <li>Sweet Potato Pie ..... 4</li>
+              <li>Pecan Pie ..... 4</li>
+              <li>Buttermilk Pie ..... 4</li>
+            </ul>
+          </div>
+
+        </script>
+
+          <div class="breakfast">
+            <h4>Breakfast</h4>
+            <ul>
+              <li>Bagel & Egg ..... 2</li>
+              <li>Biscuit & Egg ..... 2</li>
+              <li>Bacon Biscuit ..... 3 </li>
+              <li>Chicken Biscuit ..... 3</li>
+              <li>Ham Biscuit ..... 3</li>
+              <li>Turkey Bacon Biscuit ..... 3</li>
+              <li>French Toast ..... 6</li>
+              <li>Salmon Croquettes ..... 6</li>
+              <li>Chicken & Waffles ..... 8</li>
+              <li>French Toast Combo ..... 8</li>
+            </ul>
+          </div>
+
+          <div class="sandwiches">
+            <h4>Sandwiches</h4>
+            <ul>
+              <li>Peanut Butter & Jelly ..... 4</li>
+              <li>Egg Salad ..... 4</li>
+              <li>Veras Fried Beef Lettuce Slaw ..... 8</li>
+              <li>Honey Maple Ham .... 8</li>
+              <li>Lemon Pepper Chicken .... 8</li>
+              <li>Spicy Turkey .... 8</li>
+              <li>Chicken Salad Sandwich .... 8</li>
+              <li>Tuna Salad Sandwich .... 8</li>
+              <li>Chicken Sausage .... 8</li>
+              <li>London Broil .... 10</li>
+            </ul>
+          </div>
+
+          <div class="salads">
+            <h4>Salads</h4>
+            <ul>
+              <li>Side Salad ..... 3</li>
+              <li>House Salad ..... 6</li>
+              <li>Chicken Caesar Salad ..... 7</li>
+              <li>Chef Salad ..... 7</li>
+              <li>Grilled Chicken Salad ..... 7</li>
+              <li>Chopped Salad ..... 9</li>
+            </ul>
+          </div>
+
+          <div class="soup">
+            <h4>Soup of the Day</h4>
+            <ul>
+              <li>Baked Potato ..... 3</li>
+              <li>Broccoli & Cheddar ..... 3</li>
+              <li>Chicken Noodle ..... 3</li>
+              <li>Tortilla ..... 3</li>
+              <li>Turkey Chili ..... 3</li>
+            </ul>
+          </div>
+
+          <div class="drinks">
+            <h4>Drinks</h4>
+            <ul>
+              <li>Bottled Water ..... 1</li>
+              <li>Canned Soda ..... 1</li>
+              <li>Peach Tea ..... 2</li>
+              <li>Sweet Tea ..... 2</li>
+              <li>Coffee ..... 2</li>
+              <li>Espresso ..... 4.5</li>
+            </ul>
+          </div>
+
+          <div class="toppings">
+            <h4>Toppings & Extras</h4>
+            <ul>
+              <li>Cheese ..... 1</li>
+              <li>Bacon ..... 1</li>
+              <li>Avocado ..... 2</li>
+              <li>Chicken ..... 3</li>
+            </ul>
+          </div>
+
+          <div class="desserts">
+            <h4>Desserts</h4>
+            <ul>
+              <li>(3) Chocolate Chip Cookies ..... 1</li>
+              <li>(3) Oatmeal Cookies ..... 1</li>
+              <li>Banana Pudding ..... 4</li>
+              <li>Bread Pudding ..... 4</li>
+              <li>Cheesecake ..... 4</li>
+              <li>Key Lime Pie ..... 4</li>
+            </ul>
+          </div>
+
+          <div class="v-desserts">
+            <h4>Veras Desserts</h4>
+            <ul>
+              <li>Red Velvet Cupcakes ..... 4</li>
+              <li>Sweet Potato Pie ..... 4</li>
+              <li>Pecan Pie ..... 4</li>
+              <li>Buttermilk Pie ..... 4</li>
+            </ul>
+          </div>
+        </section>
 
       </header>
+
     </section>
+
+
+
 
     <div class="content">
 
-      <section class="story">  <!-- Bob -->
-        Story behind the red chalkboard...
-      </section>
+      <section class="blog">  <!-- Bob -->
 
-      <section class="story"></section>  <!-- Bob -->
+        <article class="story">
+          <h2>Our Story</h2>
+          <div class="story-leader show"></div>
+          <div class="story-full hide"></div>
+        </article>
 
-      <section class="menu">  <!-- Spencer -->
-        <div class="breakfast">
-          <h4>Breakfast</h4>
-          <ul>
-            <li>Breakfast Special</li>
-            <li>Eggs & Bacon</li>
-            <li>French Toast</li>
-            <li>Bagel and Cream Cheese</li>
-          </ul>
-        </div>
+        <article class="news">
+          <h2>Latest News</h2>
 
-        <div class="lunch">
-          <h4>Lunch</h4>
-          <ul>
-            <li>Turkey Sandwich</li>
-            <li>Chicken & Waffles</li>
-            <li>Ceasar Salad</li>
-            <li>Southern Style Lunch</li>
-          </ul>
-        </div>
+          <script type="text/template" id="latestNewsTemplate">
+            <h4>{{ title }}</h4>
+            <p>{{ post }}</p>
+          </script>
 
-        <div class="dinner">
-          <h4>Dinner</h4>
-          <ul>
-            <li>Steak</li>
-            <li>Soup</li>
-            <li>Salad</li>
-            <li>Pork</li>
-          </ul>
-        </div>
-
-<div class="option2">
-        <div class="breakfast2">
-          <h4>Breakfast</h4>
-          <ul>
-            <li>Breakfast Special</li>
-            <li>Eggs & Bacon</li>
-            <li>French Toast</li>
-            <li>Bagel and Cream Cheese</li>
-          </ul>
-        </div>
-
-        <div class="lunch2">
-          <h4>Lunch</h4>
-          <ul>
-            <li>Turkey Sandwich</li>
-            <li>Chicken & Waffles</li>
-            <li>Ceasar Salad</li>
-            <li>Southern Style Lunch</li>
-          </ul>
-        </div>
-
-        <div class="dinner2">
-          <h4>Dinner</h4>
-          <ul>
-            <li>Steak</li>
-            <li>Soup</li>
-            <li>Salad</li>
-            <li>Pork</li>
-          </ul>
-        </div>
-    </div>
+        </article>
 
       </section>
 
@@ -122,13 +286,29 @@
       <!--  Hours & Directions-->
             <div class="leftcol">
               <ul>
-                <li>Contact</li>
-                <span>Linda Alaydis</span>
+                <li>
+                 <div class=”dottedbg”></div>
+                <lable>Contact</lable>
+                <span>Linda Alaydi</span>
+                </li>
+
+                <li>
+                 <div class=”dottedbg”></div>
+                <lable>Phone Number</lable>
                 <span>404 555-5555</span>
-                <li>Location</li>
+                </li>
+
+                <li>
+                 <div class=”dottedbg”></div>
+                <lable>Address</lable>
                 <span>115 Martin Luther King Dr NW Atlanta Georgia</span>
-                <li>Hours</li>
+                </li>
+
+                <li>
+                 <div class=”dottedbg”></div>
+                <lable>Hours</lable>
                 <span>7am to 4pm</span>
+                </li>
               </ul>
 
               <!--add email and other info-->
@@ -137,7 +317,7 @@
 
             <div class="rightcol">
               <iframe
-                  width="580"
+                  width="630"
                   height="450"
                   frameborder="0" style="border:0"
                   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3d2TDoBv5yRjjsRTuVZ1DgapTgmXQYKE
