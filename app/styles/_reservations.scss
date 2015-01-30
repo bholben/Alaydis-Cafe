@@ -1,0 +1,37 @@
+
+section.reservations {
+  padding: 30px;
+  form {
+    overflow: hidden;
+    label, input[type="submit"] {
+      display: block;
+    }
+    input, select {
+      height: 30px;
+    }
+    > div {
+      width: 50%;
+      float: left;
+      > div {
+        overflow: hidden;
+        > div {
+          float: left;
+        }
+      }
+    }
+
+    input, textarea {
+      width: 100%;
+      font-family: Helvetica, Arial;
+    }
+    input[name="date"],
+    input[name="numParty"],
+    input[name="seatingPref"] {
+      width: 200px;
+    }
+    input[type="submit"] {
+      margin: 20px auto;
+    }
+  }
+}
+

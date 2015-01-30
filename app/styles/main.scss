@@ -8,13 +8,9 @@
 @import 'mixins';
 @import 'globalTags';
 @import 'banner';
-
-.content {
-  @include centerPage;
-  // background-color: $cGrayE;
-}
-
+.lower-content { @include centerPage; }
 @import 'story';
 @import 'menu';
 @import 'contact';
+@import 'reservations'
 

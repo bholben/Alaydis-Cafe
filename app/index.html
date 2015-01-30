@@ -136,13 +136,13 @@
               <ul>
                 <li>
 
-                 <div class="dottedbg"></div>  
+                 <div class="dottedbg"></div>
                 <lable>Contact</lable>
                 <span>Linda Alaydi</span>
                 </li>
 
                 <li>
-                 <div class="dottedbg"></div>  
+                 <div class="dottedbg"></div>
                 <lable>Phone Number</lable>
                 <span>404 555-5555</span>
                 </li>
@@ -153,8 +153,8 @@
                 <label>E-Mail</label>
                 <span>lindaalaydi@yahoo.com</span>
                 </li>
-              
-                 
+
+
                 <li>
                  <div class="dottedbg"></div>
                 <lable>Address</lable>
@@ -162,7 +162,7 @@
                 </li>
 
                 <li>
-                 <div class="dottedbg"></div>            
+                 <div class="dottedbg"></div>
                 <lable>Hours</lable>
                 <span>7am to 4pm</span>
                 </li>
@@ -182,6 +182,49 @@
               </iframe>
             </div>
 
+      </section>
+
+      <section class="reservations">
+        <form action="/" method="post" id="reservationsForm">
+
+          <div class="left">
+
+              <label for="fullName">Full Name</label>
+              <input type="text" name="fullName" id="fullName">
+
+            <div>
+              <div>
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date">
+              </div>
+
+              <div>
+                <label for="numParty">Number in Party</label>
+                <input type="text" name="numParty" id="numParty">
+              </div>
+
+              <div>
+                <label for="seatingPref">Seating Preference</label>
+                <select type="text" name="seatingPref" id="seatingPref">
+                  <option value="indoor">Indoor</option>
+                  <option value="outdoor">Outdoor</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="right">
+
+            <label for="notes">Special Notes</label>
+            <textarea rows="4" name="notes" id="notes"></textarea>
+
+          </div>
+
+          <input type="submit" value="Reserve Table">
+
+
+        </form>
       </section>
 
     </div>
@@ -209,7 +252,7 @@
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/menu.js"></script>
-        
+
         <script src="scripts/story_text.js"></script>
         <script src="scripts/john.js"></script>
         <script src="scripts/spencer.js"></script>
