@@ -135,25 +135,34 @@
             <div class="leftcol">
               <ul>
                 <li>
-                 <div class=”dottedbg”></div>
+
+                 <div class="dottedbg"></div>
                 <lable>Contact</lable>
                 <span>Linda Alaydi</span>
                 </li>
 
                 <li>
-                 <div class=”dottedbg”></div>
+                 <div class="dottedbg"></div>
                 <lable>Phone Number</lable>
                 <span>404 555-5555</span>
                 </li>
 
+
                 <li>
-                 <div class=”dottedbg”></div>
+                <div class="dottedbg"></div>
+                <label>E-Mail</label>
+                <span>lindaalaydi@yahoo.com</span>
+                </li>
+
+
+                <li>
+                 <div class="dottedbg"></div>
                 <lable>Address</lable>
                 <span>115 Martin Luther King Dr NW Atlanta Georgia</span>
                 </li>
 
                 <li>
-                 <div class=”dottedbg”></div>
+                 <div class="dottedbg"></div>
                 <lable>Hours</lable>
                 <span>7am to 4pm</span>
                 </li>
@@ -165,8 +174,8 @@
 
             <div class="rightcol">
               <iframe
-                  width="630"
-                  height="450"
+                  width="530"
+                  height="350"
                   frameborder="0" style="border:0"
                   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3d2TDoBv5yRjjsRTuVZ1DgapTgmXQYKE
                   &q=115 Martin Luther King Dr Se, Atlanta+Ga">
@@ -175,9 +184,7 @@
 
       </section>
 
-<!-- SPENCER EDITS BELOW -->
-      
-      
+<!-- SPENCER EDITS BELOW -->      
 
       <div id="disqus_thread"></div>
       <script type="text/javascript">
@@ -199,6 +206,49 @@
         </ul>
       </div>
     
+      <section class="reservations">
+        <form action="/" method="post" id="reservationsForm">
+
+          <div class="left">
+
+              <label for="fullName">Full Name</label>
+              <input type="text" name="fullName" id="fullName">
+
+            <div>
+              <div>
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date">
+              </div>
+
+              <div>
+                <label for="numParty">Number in Party</label>
+                <input type="text" name="numParty" id="numParty">
+              </div>
+
+              <div>
+                <label for="seatingPref">Seating Preference</label>
+                <select type="text" name="seatingPref" id="seatingPref">
+                  <option value="indoor">Indoor</option>
+                  <option value="outdoor">Outdoor</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="right">
+
+            <label for="notes">Special Notes</label>
+            <textarea rows="4" name="notes" id="notes"></textarea>
+
+          </div>
+
+          <input type="submit" value="Reserve Table">
+
+
+        </form>
+      </section>
+
     </div>
 
   <!-- JS Templates -->
@@ -228,7 +278,7 @@
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/menu.js"></script>
-        
+
         <script src="scripts/story_text.js"></script>
         <script src="scripts/john.js"></script>
         <script src="scripts/spencer.js"></script>
