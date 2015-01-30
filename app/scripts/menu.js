@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-v
-	"BREAKFAST": [
-=======
 var menu = {
 	"breakfast": [
->>>>>>> dd971f7b9d6dd9ef7f2eafe6da2de140815200cb
 		{
 		"id": 001,
 		"item": "Bagel & Egg",
