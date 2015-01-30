@@ -23,7 +23,8 @@ latestNewsTemplate = _.template($('#latestNewsTemplate').html());
 
 // Request latest news data from API and receive a promise back.
 // Act on whatever is returned from the promise.
-$.getJSON('http://private-anon-eafb492e3-restaurantapi.apiary-mock.com/news/latest')
+var newsAPI = 'http://private-anon-eafb492e3-restaurantapi.apiary-mock.com/news/latest';
+$.getJSON(newsAPI)
 .done(function (data) {
   fullNewsPost = data.post + ' <a href="#" class="collapse">Show Less</a>';
   shortNewsPost = data.post = clampText(data.post, 105);
@@ -31,7 +32,7 @@ $.getJSON('http://private-anon-eafb492e3-restaurantapi.apiary-mock.com/news/late
 })
 .fail(function (jqXHR) {
   var msg = 'Error retrieving data from server. ';
-  $('article.news').prepend(msg);
+  $('article.news').prepend('<p class="error">' + msg + '</p>');
   console.log(msg + jqXHR.statusText);
 });
 
@@ -59,8 +60,32 @@ $('.blog').on('click', 'article a.expand', function (e) {
 //   }
 // });
 
+$('reservationsForm').submit(function (e) {
+  e.preventDefault();
 
+  var form = $(this),
+      formData = {
+        fullName: form.find('input[name="fullName"]').val(),
+        numParty: form.find('input[name="numParty"]').val(),
+        date: form.find('input[name="date"]').val(),
+        notes: form.find('input[name="notes"]').val(),
+        seatingPref: form.find('input[name="seatingPref"]').val(),
+      },
+      serverAPI = 'http://tiy-atl-fe-server.herokuapp.com/collections';
 
+      console.log(formData);
+
+  // $.post(serverAPI, formData)
+  // .done(function (data) {
+  //   console.log(data);
+  // })
+  // .fail(function (jqXHR) {
+  //   var msg = 'Error retrieving data from server. ';
+  //   $('section.reservations').append('<p class="error">' + msg + '</p>');
+  //   console.log(msg + jqXHR.statusText);
+  // });
+
+});
 
 
 
