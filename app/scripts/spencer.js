@@ -31,15 +31,12 @@ $('.soup-items').append(_.template($('#soups-template').text())(food));
 });
 
 drinks.forEach(function (food) {
-	$('.drink-items').append(_.template($('#menu-template').text())(food));
+	if (food.item == "Coffee") { 
+		$('.drink-items').append(_.template($('#coffee-template').text())(food));
+} else {
+		$('.drink-items').append(_.template($('#menu-template').text())(food));
+	};
 });
-
-// drinks.forEach(function (food) {
-// 	if (food.item = "Coffee") { 
-// 		$('.drink-items').append(_.template($('#coffee-template').text())(food));
-// } else {
-// 		$('.drink-items').append(_.template($('#menu-template').text())(food));
-// });
 
 toppings.forEach(function (food) {
 $('.topping-items').append(_.template($('#menu-template').text())(food));
@@ -52,6 +49,44 @@ $('.dessert-items').append(_.template($('#menu-template').text())(food));
 veraDesserts.forEach(function (food) {
 $('.v-dessert-items').append(_.template($('#menu-template').text())(food));
 });
+
+//INSTAGRAM API
+
+var instagram = 'https://api.instagram.com/v1/tags/alaydiscafe/media/recent?client_id=adcf4211a05c4d2b9290d57b3be5b155'
+
+// $.getJSON(instagram)
+// .done( function (img) {
+// 	console.log(img.data.images.standard_resolution.url);
+// });
+var search_results;
+var img_urls;
+
+$.ajax({
+  dataType: "jsonp",
+  
+  url: instagram,
+  
+  success: function (data) {
+  	search_results = data;
+
+  	img_urls = _.map(data.data, function(d) {return d.images.standard_resolution.url;
+  	});
+
+  	for (var i = 0; i < 5; i++) {
+
+  		var img = '<li><a href="#">' + '<img src="' + img_urls[i] + '"/>' + '</a></li>'
+
+  		console.log(img);
+
+  	$('.instagram-image-bar').append(img);
+  	}
+  }
+});
+
+  	// for (var i = 0; i < 4; i++) {
+  	// 	var img = '<a href="#"><div class="ig-card">' + 'img src=' + img_urls[i] + ' class="ig-img" />' + aside.append(img);
+  
+  
 
 
 
