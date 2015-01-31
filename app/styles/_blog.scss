@@ -1,8 +1,10 @@
 
 section.blog {
-  overflow: hidden;
+  clear: both;
+  overflow: scroll;
   border-bottom: 1px solid $cGrayC;
   margin-bottom: 30px;
+  height: 300px;
   article {
     float: left;
     max-width: 50%;
