@@ -1115,8 +1115,41 @@ var photolist = [
 "stat": "ok"
 }
 ]
+		/*	need function to make the dropdown menu functional
+
+			function showGallery(){
+	
 
 
+$(document).ready(function(){
+			$.getJSON("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=4a0d023b2535d7e0c2cab4a59bedc766&tags=underground+atlanta&format=json&nojsoncallback=1&auth_token=72157650565182742-56dd47810683a2cd&api_sig=d7ae6eba28dec2d019c372ba4476e638
+				&format=json&jsoncallback=?",
+
+				function(data){
+				var photoID = "";
+				var title = "";
+					$.each(data.photos.photo, function(i,set){
+					photoID = photo.ids[0];
+					title = "Atlanta Underground";
+					ids.push(photoID);
+					titles.push(title);
+				});
+			});
+		});
+
+/*ties the photo array itmes to the dropdown menU
+				for(i=0; i<ids.length;i++){
+					var option = new Option(titles[i],ids[i]);
+					var dropDown = document.getElementById("Galleries");
+						dropDown.options[i] = option;
+					}
+
+/*html for drop down menu*/
+/*<label>Please select a Gallery from the drop-down menu to view.</label>
+	
+	<form action="" method="get" name="choose_gallery" id="choose_gallery">
+		<select name="Galleries" id="Galleries" onchange="showGallery();"></select>
+	</form>*/
 
 
 

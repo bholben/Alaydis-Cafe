@@ -7,10 +7,61 @@
 @import 'vars';
 @import 'mixins';
 @import 'globalTags';
+
 @import 'banner';
-.lower-content { @include centerPage; }
-@import 'story';
+
+.content {
+  position: relative;
+}
+
+.content-inner {
+  @include centerPage;
+  overflow: hidden;
+}
+
 @import 'menu';
+
+.content .content-inner .BOB-TEMP {
+  width: 60%;
+  height: 600px;
+  overflow: hidden;
+  margin: 0;
+  float: left;
+}
+
+@import 'photos-primary';
+@import 'blog';
+
+$flyoutWidth: 400px;
+
+.flyout {
+  position: absolute;
+  top: 50px;
+  width: $flyoutWidth;
+  height: 300px;
+}
+
+.flyout-left {
+  left: 50px - $flyoutWidth;
+  background: lightblue;
+}
+
+.flyout-right {
+  right: 50px - $flyoutWidth;
+  background: brown;
+}
+
 @import 'contact';
+
 @import 'reservations'
+@import url(http://weloveiconfonts.com/api/?family=zocial)
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+@import 'reservations';
+
+@import 'sidebar-photos';
+
 

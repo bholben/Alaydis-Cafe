@@ -76,7 +76,7 @@ $.ajax({
 });
 
 
-
+// MENU ACCORDION
 if($(window).width() > 768){
 
 // Hide all but first tab content on larger viewports
