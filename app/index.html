@@ -10,7 +10,10 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+
+    <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -24,44 +27,34 @@
   <body>
 
     <section class="banner">  <!-- Spencer -->
-        
-
-        <header>
-
+      <header>
         <nav>
-          <ul class="nav">
-            <li><a href="#">Menu</li></a>
-            <li><a href="#">Reservations</li></a>
-            <li><a href="#">Hours & Directions</li></a>
-            <li><a href="#">Blog</li></a>
-          </ul>
-
           <ul class="social">
             <li><a href="http://www.facebook.com">
+
             <img src="images/social/facebook_circle.png"></a>/</li>
+
+            </a></li>
+
             <li><a href="http://www.plus.google.com"><img src="images/social/googleplus_circle.png"></a></li>
             <li><a href="http://www.twitter.com"><img src="images/social/twitter_circle.png"></a></li>
             <li><a href="http://www.pinterest.com"><img src="images/social/pinterest_circle.png"></a></li>
             <li><a href="http://www.instagram.com"><img src="images/social/instagram_circle.png"></a></li>
           </ul>
         </nav>
-
-
-
-        <div class= "welcome-container">
-          <img src="images/final-logo.png">
-        </div>
-
-        <span>Check out our <br/>
-        Daily Special!</span>
-
-        
       </header>
+
+      <div class= "welcome-container">
+        <img src="images/final-logo.png">
+      </div>
+
     </section>
 
-    <section class="menu">  <!-- Spencer -->
+      <!-- Spencer -->
 
-        <h2>Our Menu</h2>
+    <section class="menu">
+
+      <h2>Our Menu</h2>
 
           <div class="breakfast">
             <h4>Breakfast</h4>
@@ -112,7 +105,6 @@
           </div>
         </section>
 
-
     <div class="content">
 
       <section class="blog">  <!-- Bob -->
@@ -142,7 +134,7 @@
                 <li>
 
 
-                <div class="dottedbg">           
+                <div class="dottedbg">
                 <lable>Contact</lable>
                 <span>Linda Alaydi</span>
                 </li>
@@ -176,22 +168,22 @@
 
               <!--add email and other info-->
            <!-- </div>-->
-            
 
-            <div class="rightcol">
-              <iframe
-                  width="430"
-                  height="250"
-                  frameborder="0" style="border:0"
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3d2TDoBv5yRjjsRTuVZ1DgapTgmXQYKE
-                  &q=115 Martin Luther King Dr Se, Atlanta+Ga">
-              </iframe>
-            </div>
-        
+
+        <div class="google-map">
+          <iframe
+              width="430"
+              height="250"
+              frameborder="0" style="border:0"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3d2TDoBv5yRjjsRTuVZ1DgapTgmXQYKE
+              &q=115 Martin Luther King Dr Se, Atlanta+Ga">
+          </iframe>
+        </div>
+
 
       </section>
 
-<!-- SPENCER EDITS BELOW -->      
+<!-- DISQUS PLUGIN -->
 
       <div id="disqus_thread"></div>
       <script type="text/javascript">
@@ -205,53 +197,71 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
       </script>
+
       <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-      
+
+    <!-- DISQUS PLUGIN FINISH -->
+
       <div>
         <ul class="instagram-image-bar">
-          
         </ul>
       </div>
-    
+
       <section class="reservations">
         <form action="/" method="post" id="reservationsForm">
 
-          <div class="left">
+          <div class="row">
+            <div class="small-3 large-2 columns">
+              <span class="prefix">Name</span>
+            </div>
+            <div class="small-9 large-10 columns">
+              <input type="text" name="fullName" placeholder="Full name...">
+            </div>
+          </div>
 
-              <label for="fullName">Full Name</label>
-              <input type="text" name="fullName" id="fullName">
+          <div class="row">
+            <div class="small-3 large-2 columns">
+              <span class="prefix">Date</span>
+            </div>
+            <div class="small-9 large-10 columns">
+              <input type="date" name="date">
+            </div>
+          </div>
 
-            <div>
-              <div>
-                <label for="date">Date</label>
-                <input type="date" name="date" id="date">
-              </div>
+          <div class="row">
+            <div class="small-3 large-2 columns">
+              <span class="prefix">Party No.</span>
+            </div>
+            <div class="small-9 large-10 columns">
+              <input type="number" name="numParty" placeholder="1-20">
+            </div>
+          </div>
 
-              <div>
-                <label for="numParty">Number in Party</label>
-                <input type="text" name="numParty" id="numParty">
-              </div>
-
-              <div>
-                <label for="seatingPref">Seating Preference</label>
-                <select type="text" name="seatingPref" id="seatingPref">
-                  <option value="indoor">Indoor</option>
-                  <option value="outdoor">Outdoor</option>
-                </select>
-              </div>
+          <div class="row">
+            <div class="small-3 large-2 columns">
+              <span class="prefix">Seating Preference</span>
             </div>
 
+            <div class="small-9 large-10 columns">
+              <select type="text" name="seatingPref">
+                <option value="indoor">Indoor</option>
+                <option value="outdoor">Outdoor</option>
+              </select>
+            </div>
           </div>
 
-          <div class="right">
-
-            <label for="notes">Special Notes</label>
-            <textarea rows="4" name="notes" id="notes"></textarea>
-
+          <div class="row">
+            <div class="small-12 large-12 columns">
+              <textarea name="notes" placeholder="Special notes..."></textarea>
+            </div>
           </div>
 
-          <input type="submit" value="Reserve Table">
-
+          <div class="row">
+            <div class="small-6 large-6 columns confirm-reservation hide">
+              <span class="prefix">Thanks. See you soon.</span>
+            </div>
+            <input type="submit" value="Reserve Table">
+          </div>
 
         </form>
       </section>
@@ -277,14 +287,18 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="../bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <script src="../bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+    <script src="../bower_components/foundation/js/foundation.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
-        <script src="scripts/menu.js"></script>
+        <script src="scripts/menu.json"></script>
 
         <script src="scripts/story_text.js"></script>
         <script src="scripts/john.js"></script>
