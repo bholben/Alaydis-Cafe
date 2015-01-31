@@ -80,6 +80,7 @@ $('#reservationsForm').submit(function (e) {
   $.post(reservationEndPoint, formData)
   .done(function (data) {
     console.log(data);
+    $('.confirm-reservation').removeClass('hide');
   })
   .fail(function (jqXHR) {
     var msg = 'Error retrieving data from server. ';

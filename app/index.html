@@ -10,8 +10,7 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
-    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
-    <!-- <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css" /> -->
+    <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -35,7 +34,7 @@
             <li><a href="http://www.pinterest.com"><img src="images/social/pinterest_circle.png"></a></li>
             <li><a href="http://www.instagram.com"><img src="images/social/instagram_circle.png"></a></li>
           </ul>
-        </nav>       
+        </nav>
       </header>
 
       <div class= "welcome-container">
@@ -45,9 +44,9 @@
     </section>
 
       <!-- Spencer -->
-    
+
     <section class="menu">
-      
+
       <h2>Our Menu</h2>
 
           <div class="breakfast">
@@ -128,7 +127,7 @@
                 <li>
 
 
-                <div class="dottedbg">           
+                <div class="dottedbg">
                 <lable>Contact</lable>
                 <span>Linda Alaydi</span>
                 </li>
@@ -162,7 +161,7 @@
 
               <!--add email and other info-->
            <!-- </div>-->
-            
+
 
         <div class="google-map">
           <iframe
@@ -173,11 +172,11 @@
               &q=115 Martin Luther King Dr Se, Atlanta+Ga">
           </iframe>
         </div>
-        
+
 
       </section>
 
-<!-- DISQUS PLUGIN -->      
+<!-- DISQUS PLUGIN -->
 
       <div id="disqus_thread"></div>
       <script type="text/javascript">
@@ -191,55 +190,71 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
       </script>
-      
+
       <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
     <!-- DISQUS PLUGIN FINISH -->
-      
+
       <div>
         <ul class="instagram-image-bar">
         </ul>
       </div>
-    
+
       <section class="reservations">
         <form action="/" method="post" id="reservationsForm">
 
-          <div class="left">
+          <div class="row">
+            <div class="small-3 large-2 columns">
+              <span class="prefix">Name</span>
+            </div>
+            <div class="small-9 large-10 columns">
+              <input type="text" name="fullName" placeholder="Full name...">
+            </div>
+          </div>
 
-              <label for="fullName">Full Name</label>
-              <input type="text" name="fullName">
+          <div class="row">
+            <div class="small-3 large-2 columns">
+              <span class="prefix">Date</span>
+            </div>
+            <div class="small-9 large-10 columns">
+              <input type="date" name="date">
+            </div>
+          </div>
 
-            <div>
-              <div>
-                <label for="date">Date</label>
-                <input type="date" name="date">
-              </div>
+          <div class="row">
+            <div class="small-3 large-2 columns">
+              <span class="prefix">Party No.</span>
+            </div>
+            <div class="small-9 large-10 columns">
+              <input type="number" name="numParty" placeholder="1-20">
+            </div>
+          </div>
 
-              <div>
-                <label for="numParty">Number in Party</label>
-                <input type="text" name="numParty">
-              </div>
-
-              <div>
-                <label for="seatingPref">Seating Preference</label>
-                <select type="text" name="seatingPref">
-                  <option value="indoor">Indoor</option>
-                  <option value="outdoor">Outdoor</option>
-                </select>
-              </div>
+          <div class="row">
+            <div class="small-3 large-2 columns">
+              <span class="prefix">Seating Preference</span>
             </div>
 
+            <div class="small-9 large-10 columns">
+              <select type="text" name="seatingPref">
+                <option value="indoor">Indoor</option>
+                <option value="outdoor">Outdoor</option>
+              </select>
+            </div>
           </div>
 
-          <div class="right">
-
-            <label for="notes">Special Notes</label>
-            <textarea rows="4" name="notes"></textarea>
-
+          <div class="row">
+            <div class="small-12 large-12 columns">
+              <textarea name="notes" placeholder="Special notes..."></textarea>
+            </div>
           </div>
 
-          <input type="submit" value="Reserve Table">
-
+          <div class="row">
+            <div class="small-6 large-6 columns confirm-reservation hide">
+              <span class="prefix">Thanks. See you soon.</span>
+            </div>
+            <input type="submit" value="Reserve Table">
+          </div>
 
         </form>
       </section>
@@ -268,7 +283,6 @@
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../bower_components/fastclick/lib/fastclick.js"></script>
     <script src="../bower_components/jquery.cookie/jquery.cookie.js"></script>
     <script src="../bower_components/jquery-placeholder/jquery.placeholder.js"></script>
