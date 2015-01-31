@@ -3,6 +3,7 @@ section.banner {
   background-color: white;
   background-image: url('/images/atlanta-skyline.jpg');
   background-size: 1420px 600px;
+  overflow: auto;
   height: 500px;
 
   header {
@@ -35,17 +36,16 @@ section.banner {
   }
 
   .welcome-container {
+    display: inline-block;
     @include centerPage;
-    // display: block;
-    width: 80%;
     margin: 0px auto;
-    padding: 0;
+    padding: 10%;
 
     
     img {
-      display: block;
+      display: inline-block;
       width: 350px;
-      margin: 0px auto;
+      margin: 0 auto;
     }
   }
 }
