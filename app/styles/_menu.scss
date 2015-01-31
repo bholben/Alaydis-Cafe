@@ -63,6 +63,7 @@
 
   h2 {
     margin: .5em auto;
+    // background: black;
   }
 }
 
@@ -74,7 +75,6 @@
   font-size: 2em;
   display: block;
   border-radius: 10px;
-  text-align: center;
 }
 
 .no-js .accordion__title {
@@ -120,7 +120,7 @@
 @media (max-width: 48em) {
   
   .accordion {
-    border: 1px solid grey;
+    // border: 1px solid grey;
   }
   
   .accordion__title,
@@ -134,11 +134,12 @@
   }
   
  .accordion__title.active {
-  border-top-color:#eee;
+  // border-top-color: black;
   }
   
   .accordion__title.active, .accordion__title:hover {
-    background:#777;
+    background: black;
+    border-radius: 0px;
   }
   
   .accordion__title:before {
