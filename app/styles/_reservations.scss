@@ -2,35 +2,20 @@
 section.reservations {
   padding: 30px;
   form {
-    overflow: hidden;
-    label, input[type="submit"] {
-      display: block;
-    }
-    input, select {
-      height: 30px;
-    }
-    > div {
-      width: 50%;
-      float: left;
-      > div {
-        overflow: hidden;
-        > div {
-          float: left;
-        }
-      }
-    }
-
-    input, textarea {
-      width: 100%;
+    .prefix, input, textarea {
       font-family: Helvetica, Arial;
-    }
-    input[name="date"],
-    input[name="numParty"],
-    input[name="seatingPref"] {
-      width: 200px;
+      font-size: 1.3rem;
     }
     input[type="submit"] {
-      margin: 20px auto;
+      float: right;
+    }
+    .columns {
+      padding: 0;
+    }
+    .confirm-reservation span {
+      background-color: $cAlaydi;
+      color: white;
+      border: 1px solid black;
     }
   }
 }
