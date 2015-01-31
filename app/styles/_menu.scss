@@ -1,51 +1,185 @@
-    section.menu {
-      @include outer-container;
-      @include chalkboard;
-      text-align: center;
-      margin: 2% auto;
-      h2 {
-        text-align: center;
-        color: #fff;
-        margin: 3% auto;
-      }
-      ul {
-        margin: 2% 0;
-      }
-      .breakfast{
-        @include span-columns(6 of 12);
-        color: $cBlue;
-      }
-      .sandwiches {
-        @include span-columns(6 of 12);
-        @include omega();  
-        display: inline-block;  
-        color: $cYellow;     
-      }
-      .salads {
-        @include span-columns(6 of 12);
-        color: $cGreen;
-      }
-      .soup {
-        @include span-columns(6 of 12);
-        @include omega();
-        color: $cPink;
-      }
-      .drinks {
-        @include span-columns(6 of 12);
-        color: $cBlue;
-      }
-      .toppings {
-        @include span-columns(6 of 12);
-        @include omega();
-        color: $cYellow;
-      }
-      .desserts {
-        @include span-columns(6 of 12);
-        color: $cGreen;
-      }
-      .v-desserts {
-        @include span-columns(6 of 12);
-        @include omega();    
-        color: $cPink;
-      }
-    }
+// #menu {
+//   @include outer-container;
+//   @include chalkboard;
+//   text-align: left;
+//   margin: 2% auto;
+//   h2 {
+//     text-align: center;
+//     color: #fff;
+//     margin: 3%;
+//   }
+
+//   ul {
+//     margin: 3%;
+//     @include span-columns(12);
+
+//   }
+//   #breakfast{
+//     margin: 3%;
+//     color: $cBlue;
+//   }
+//   #sandwiches {
+//     margin: 3%;
+//     color: $cYellow;
+//   }
+//   #salads {
+//     margin: 3%;
+//     color: $cGreen;
+//   }
+//   #soup {
+//     margin: 3%;
+//     color: $cPink;
+//   }
+//   #drinks {
+//     margin: 3%;
+//     color: $cBlue;
+//   }
+//   #toppings {
+//     margin: 3%;
+//     color: $cYellow;
+//   }
+//   #desserts {
+//     margin: 3%;
+//     color: $cGreen;
+//   }
+//   #v-desserts {
+//     margin: 3%;
+//     color: $cPink;
+//   }
+// }
+
+// NEW ACCORDION
+
+
+.accordion {
+  @include outer-container;
+  @include chalkboard;
+  margin: 2em auto;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  font-size: 1em;
+  position: relative;  
+
+  h2 {
+    margin: .5em auto;
+  }
+}
+
+.accordion__title {
+  padding: 0 1em;
+  color: #fff;
+  float: left;
+  cursor: pointer;
+  font-size: 2em;
+  display: block;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.no-js .accordion__title {
+  float: none;
+  height:auto;
+  cursor:auto;
+  margin:0;
+  padding:0 2em;
+}
+
+.accordion__content {
+  float: right;
+  width: 100%;
+  margin: 3em 0 0 -100%;
+  padding: 2em;
+}
+
+.no-js .accordion__content {
+  float:left;
+  margin:0;
+}
+
+.accordion__title:hover,
+.accordion__title.active {
+  background: black;
+  color: white;
+}
+
+.no-js .accordion__title:hover {
+  background: black;
+  color: white;
+}
+
+.accordion__title.active {
+  // border-top-color: black;
+}
+
+.overflow-scrolling {
+  padding: 3.5em;
+}
+
+// MOBILE
+@media (max-width: 48em) {
+  
+  .accordion {
+    border: 1px solid grey;
+  }
+  
+  .accordion__title,
+  .accordion__content { 
+    float: none;
+    margin: 0;
+  }
+  
+  .accordion__title:first-child {
+    border:none;
+  }
+  
+ .accordion__title.active {
+  border-top-color:#eee;
+  }
+  
+  .accordion__title.active, .accordion__title:hover {
+    background:#777;
+  }
+  
+  .accordion__title:before {
+  content:"+";
+  text-align:center;
+  width:2em;
+  display:inline-block;
+  }
+ .accordion__title.active:before {
+  content:"-";
+  }
+  
+ .overflow-scrolling {
+  overflow-y: scroll;
+  height:11em;
+  padding:1em 1em 0 1em;
+  /* Warning: momemtum scrolling seems buggy on iOS 7  */
+  -webkit-overflow-scrolling: touch;
+  }
+
+  .accordion__content {
+    position:relative;
+    overflow:hidden;
+    padding:0;
+  }
+  
+   .no-js .accordion__content {
+    padding:1em;
+    overflow:auto;
+    display:block;
+  }
+  
+  .accordion__content:after {
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    height:50px;
+    border-radius:10px 0 0 10px / 50% 0 0 50%;
+    box-shadow:-5px 0 10px rgba(0, 0, 0, 0.5);
+    content:'';
+}
+   
+}

@@ -8,27 +8,27 @@ body {
   font-size: 1.3rem;
   color: $cGray3;
   //Spencer added 1/28/15
-  font-family: 'Gloria Hallelujah', cursive;
   background-color: lightgray;
 }
 
 h1, h2, h3, h4, h5 {
   //Spencer added 1/28/15
-  font-family: 'Rock Salt', cursive;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  // font-family: 'Rock Salt', cursive;
   margin: 0;
   padding: 0;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 h4 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 li {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 ul, li, p, span, a {
