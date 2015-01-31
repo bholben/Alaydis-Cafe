@@ -1,106 +1,51 @@
-// section.menu {
-//   @include span-columns(12);
-//   @include outer-container;
-//   @include chalkboard;
-//   // height: 1000px;
-//   text-align: center;
-
-//   .breakfast{
-//     @include span-columns(6 of 12);
-//     color: $cBlue;
-//     h4 {
-//       font-size: 2.5em;
-//     }
-//     ul {
-//       min-width: 400px;
-//       margin: 0 auto;
-//       li {
-//         font-size: 1.5em;
-//       }
-//     }
-//   }
-
-//   .sandwiches {
-//     @include span-columns(6 of 12);
-//     @include omega();    
-//     color: $cYellow;
-//     h4 {
-//       font-size: 2.5em;
-//     }
-//     li {
-//       font-size: 1.5em;
-//     }
-//   }
-
-//   .salads {
-//     @include span-columns(6 of 12);
-//     color: $cPink;
-//     h4 {
-//       font-size: 2.5em;
-//     }
-//     li {
-//       font-size: 1.5em;
-//     }
-//   }
-
-//   .soup {
-//     @include span-columns(6 of 12);
-//     @include omega();
-//     color: $cPink;
-//     ul {
-//       display: inline-block;
-//     }
-//     h4 {
-//       font-size: 2.5em;
-//     }
-//     li {
-//       font-size: 1.5em;
-//     }
-//   }
-
-//   .drinks {
-//     @include span-columns(6 of 12);
-//     color: $cPink;
-//     h4 {
-//       font-size: 2.5em;
-//     }
-//     li {
-//       font-size: 1.5em;
-//     }
-//   }
-
-//   .toppings {
-//     @include span-columns(6 of 12);
-//     @include omega();
-//     color: $cPink;
-//     h4 {
-//       font-size: 2.5em;
-//     }
-//     li {
-//       font-size: 1.5em;
-//     }
-//   }
-
-//   .desserts {
-//     @include span-columns(6 of 12);
-//     color: $cPink;
-//     h4 {
-//       font-size: 2.5em;
-//     }
-//     li {
-//       font-size: 1.5em;
-//     }
-//   }
-
-//   .v-desserts {
-//     @include span-columns(6 of 12);
-//     @include omega();    
-//     color: $cPink;
-//     h4 {
-//       font-size: 2.5em;
-//     }
-//     li {
-//       font-size: 1.5em;
-//     }
-//   }
-// }
+    section.menu {
+      @include outer-container;
+      @include chalkboard;
+      text-align: center;
+      margin: 2% auto;
+      h2 {
+        text-align: center;
+        color: #fff;
+        margin: 3% auto;
+      }
+      ul {
+        margin: 2% 0;
+      }
+      .breakfast{
+        @include span-columns(6 of 12);
+        color: $cBlue;
+      }
+      .sandwiches {
+        @include span-columns(6 of 12);
+        @include omega();  
+        display: inline-block;  
+        color: $cYellow;     
+      }
+      .salads {
+        @include span-columns(6 of 12);
+        color: $cGreen;
+      }
+      .soup {
+        @include span-columns(6 of 12);
+        @include omega();
+        color: $cPink;
+      }
+      .drinks {
+        @include span-columns(6 of 12);
+        color: $cBlue;
+      }
+      .toppings {
+        @include span-columns(6 of 12);
+        @include omega();
+        color: $cYellow;
+      }
+      .desserts {
+        @include span-columns(6 of 12);
+        color: $cGreen;
+      }
+      .v-desserts {
+        @include span-columns(6 of 12);
+        @include omega();    
+        color: $cPink;
+      }
+    }

@@ -475,7 +475,7 @@ var menu = {
 		"item": "Coffee",
 		"price": {
 			"small": 1,
-			"large:": 2
+			"large": 2
 			},
 		"description": "Coffee",
 		"allergies": 0,

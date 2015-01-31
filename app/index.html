@@ -11,6 +11,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css" /> -->
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -25,37 +26,29 @@
 
     <section class="banner">  <!-- Spencer -->
       <header>
-
         <nav>
-          <ul class="nav">
-            <li><a href="#">Menu</li></a>
-            <li><a href="#">Reservations</li></a>
-            <li><a href="#">Hours & Directions</li></a>
-            <li><a href="#">Blog</li></a>
-          </ul>
-
           <ul class="social">
-            <li><a href="http://www.facebook.com"><img src="images/social/facebook_circle.png"></a></li>
+            <li><a href="http://www.facebook.com">
+            </a></li>
             <li><a href="http://www.plus.google.com"><img src="images/social/googleplus_circle.png"></a></li>
             <li><a href="http://www.twitter.com"><img src="images/social/twitter_circle.png"></a></li>
             <li><a href="http://www.pinterest.com"><img src="images/social/pinterest_circle.png"></a></li>
             <li><a href="http://www.instagram.com"><img src="images/social/instagram_circle.png"></a></li>
           </ul>
-        </nav>
+        </nav>       
+      </header>
 
+      <div class= "welcome-container">
+        <img src="images/final-logo.png">
+      </div>
 
+    </section>
 
-        <div class= "welcome-container">
-          <h2>Welcome to</h2>
-          <img src="images/logo-hipster.png">
-        </div>
-
-        <span>Check out our <br/>
-        Daily Special!</span>
-
-        <section class="menu">  <!-- Spencer -->
-
-        <h2>Our Menu</h2>
+      <!-- Spencer -->
+    
+    <section class="menu">
+      
+      <h2>Our Menu</h2>
 
           <div class="breakfast">
             <h4>Breakfast</h4>
@@ -105,9 +98,6 @@
             </ul>
           </div>
         </section>
-      </header>
-    </section>
-
 
     <div class="content">
 
@@ -132,11 +122,13 @@
 
       <section class="contact">  <!-- John -->
       <!--  Hours & Directions-->
+        <!--<h2>Our Location</h2>
             <div class="leftcol">
               <ul>
                 <li>
 
-                 <div class="dottedbg"></div>
+
+                <div class="dottedbg">           
                 <lable>Contact</lable>
                 <span>Linda Alaydi</span>
                 </li>
@@ -169,21 +161,46 @@
               </ul>
 
               <!--add email and other info-->
-            </div>
+           <!-- </div>-->
+            
 
-
-            <div class="rightcol">
-              <iframe
-                  width="530"
-                  height="350"
-                  frameborder="0" style="border:0"
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3d2TDoBv5yRjjsRTuVZ1DgapTgmXQYKE
-                  &q=115 Martin Luther King Dr Se, Atlanta+Ga">
-              </iframe>
-            </div>
+        <div class="google-map">
+          <iframe
+              width="430"
+              height="250"
+              frameborder="0" style="border:0"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3d2TDoBv5yRjjsRTuVZ1DgapTgmXQYKE
+              &q=115 Martin Luther King Dr Se, Atlanta+Ga">
+          </iframe>
+        </div>
+        
 
       </section>
 
+<!-- DISQUS PLUGIN -->      
+
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'alaydiscafe'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <!-- DISQUS PLUGIN FINISH -->
+      
+      <div>
+        <ul class="instagram-image-bar">
+        </ul>
+      </div>
+    
       <section class="reservations">
         <form action="/" method="post" id="reservationsForm">
 
@@ -230,23 +247,32 @@
     </div>
 
   <!-- JS Templates -->
-  <script type="text/template" id="menu-template">
-    <li>{{item}} ..... {{price}}</li>
-  </script>
+<script type="text/template" id="menu-template">
+  <li>{{item}} ..... {{price}}
+  </li>
+</script>
 
-  <script type="text/template" id="soups-template">
-    <li>{{item}} ..... {{price.cup}}, {{price.bowl}}</li>
-  </script>
+<script type="text/template" id="soups-template">
+  <li>{{item}} ..... {{price.cup}}, {{price.bowl}}
+  </li>
+</script>
 
-  <script type="text/template" id="coffee-template">
-    <li>{{item}} ..... {{price.small}}, {{price.large}}</li>
-  </script>
+<script type="text/template" id="coffee-template">
+  <li>{{item}} ..... {{price.small}}, {{price.large}}
+  </li>
+</script>
+
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="../bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <script src="../bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+    <script src="../bower_components/foundation/js/foundation.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

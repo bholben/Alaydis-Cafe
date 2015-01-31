@@ -4,10 +4,19 @@ section.contact {
   background-color: white;
   width: 960px;
 }
+h2 {
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
 .leftcol {
-  @include span-columns(4);
+  @include span-columns(6);
   height: 600px;
   font-size: medium;
+ }
+
+ ul {
+  position: relative;
  }
  li {
    list-style:none;    
@@ -30,7 +39,7 @@ li label{
      }
      
 .dottedbg {
-   border-bottom:dotted 2px #ccc;
+   border-bottom: 1px dotted black;
    position:absolute;   
    top:15px;
    left:0;
@@ -44,9 +53,9 @@ li label{
 
   
 
-.rightcol {
+.google-map {
   float: right;
-  @include span-columns(8);
+  @include span-columns(6);
   height: 600px;
 }
 
