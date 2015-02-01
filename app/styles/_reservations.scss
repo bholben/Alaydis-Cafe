@@ -2,7 +2,7 @@
 section.reservations {
   float: left;
   width: $flyoutWidth - $handleWidth;
-  padding: 30px 0 20px 10px;
+  padding: 20px 0 20px 10px;
   form {
     overflow: scroll;
     .prefix, input, textarea, select {

@@ -1,6 +1,8 @@
 
 var flyoutLeft = $('.flyout-left'),
-    handleLeft = $('.flyout-left .handle');
+    handleLeft = $('.flyout-left .handle'),
+    flyoutRight = $('.flyout-right'),
+    handleRight = $('.flyout-right .handle');
 
 handleLeft.on('click', function () {
   flyoutLeft.toggleClass('flyout-left-open');
@@ -11,4 +13,12 @@ handleLeft.on('click', function () {
   };
 });
 
+handleRight.on('click', function () {
+  flyoutRight.toggleClass('flyout-right-open');
+  if (flyoutRight.hasClass('flyout-right-open')) {
+    handleRight.html('<i class="fa fa-chevron-right"></i>');
+  } else {
+    handleRight.html('<i class="fa fa-chevron-left"></i>');
+  };
+});
 
