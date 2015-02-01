@@ -1,0 +1,45 @@
+
+.flyout {
+  position: absolute;
+  top: 50px;
+  width: $flyoutWidth + 2px;
+  height: 360px;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.flyout-left {
+  left: $hiddenWidth;
+  background: #f8f8f8;
+  transition: all 0.4s;
+  overflow: hidden;
+  .handle-left {
+    float: right;
+    width: 50px;
+    height: 360px;
+    line-height: 360px;
+    text-align: center;
+    .fa {
+      font-size: 24px;
+      color: $cGray6;
+    }
+    span {
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.flyout-left-open {
+  left: 0;
+  transition: all 0.4s;
+}
+
+.flyout-right {
+  right: $hiddenWidth;
+  background: brown;
+}
+
+.flyout-right-open {
+  right: 0;
+}
+
