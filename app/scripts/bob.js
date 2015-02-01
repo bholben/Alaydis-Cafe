@@ -60,9 +60,11 @@ $('.blog').on('click', 'article a.expand', function (e) {
 //   }
 // });
 
-var reservationEndPoint = 'http://tiy-atl-fe-server.herokuapp.com/collections/alaydis';
+var reservationEndPoint = 'http://tiy-atl-fe-server.herokuapp.com/collections/alaydis',
+    reservationForm = $('#reservationsForm'),
+    confirmReservation = $('.confirm-reservation');
 
-$('#reservationsForm').submit(function (e) {
+reservationForm.on('submit', function (e) {
   e.preventDefault();
 
   var form = $(this),
@@ -73,19 +75,22 @@ $('#reservationsForm').submit(function (e) {
         notes: form.find('textarea[name="notes"]').val(),
         seatingPref: form.find('select[name="seatingPref"]').val(),
       };
-
-      console.log(formData);
       form[0].reset();
 
   $.post(reservationEndPoint, formData)
   .done(function (data) {
-    console.log(data);
-    $('.confirm-reservation').removeClass('hide');
+    confirmReservation
+      .removeClass('hide')
+      .addClass('success-text')
+      .text('Reservation confirmed.  See you soon!');
   })
   .fail(function (jqXHR) {
-    var msg = 'Error retrieving data from server. ';
-    $('section.reservations').append('<p class="error">' + msg + '</p>');
-    console.log(msg + jqXHR.statusText);
+    var msg = 'Communication or data error with server. ';
+    confirmReservation
+      .removeClass('hide')
+      .addClass('error-text')
+      .text(msg);
+    console.error(msg + jqXHR.statusText);
   });
 
 });
@@ -94,7 +99,6 @@ var flyoutLeft = $('.flyout-left'),
     handleLeft = $('.flyout-left .handle');
 
 handleLeft.on('click', function () {
-  console.log('Hi');
   flyoutLeft.toggleClass('flyout-left-open');
   if (flyoutLeft.hasClass('flyout-left-open')) {
     handleLeft.html('<span>R</span><i class="fa fa-chevron-left"></i>');
