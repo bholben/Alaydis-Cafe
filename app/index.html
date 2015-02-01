@@ -44,7 +44,7 @@
       </header>
 
       <div class= "welcome-container">
-        <img src="images/final-logo.png">
+        <img id="top-page" src="images/final-logo.png">
         <div class="information">
           <ul>
             <li>Monday - Friday | 7AM - 6PM</li>
@@ -136,6 +136,7 @@
           </script>
         </section>
 
+      
         <section class="blog">
           <article class="story">
             <h2>Alaydi's Story</h2>
@@ -172,12 +173,14 @@
           </script>
 
           <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </div>          
+        </div> 
+      
 
       </div>
 
       <div class="flyout flyout-left">
         <section class="reservations">
+          <h3>Reserve a Table</h3>
           <form action="/" method="post" id="reservationsForm">
 
             <div class="row">
@@ -230,74 +233,38 @@
               <input type="submit" value="Reserve Table">
             </div>
 
-            <div class>
+            <div class="row">
               <div class="small-12 columns confirm-reservation hide"></div>
             </div>
 
           </form>
         </section>
         <div class="handle">
-          <span>R</span>
+          <span>Reserve a Table Here</span>
           <i class="fa fa-chevron-right"></i>
         </div>
       </div>
 
       <div class="flyout flyout-right">
-        <section class="contact TEMP-BOB-CONTACT">
-          <!--<h2>Our Location</h2>
-              <div class="leftcol">
-                <ul>
-                  <li>
-
-
-                  <div class="dottedbg">
-                  <lable>Contact</lable>
-                  <span>Linda Alaydi</span>
-                  </li>
-
-                  <li>
-                   <div class="dottedbg"></div>
-                  <lable>Phone Number</lable>
-                  <span>404 555-5555</span>
-                  </li>
-
-
-                  <li>
-                  <div class="dottedbg"></div>
-                  <label>E-Mail</label>
-                  <span>lindaalaydi@yahoo.com</span>
-                  </li>
-
-
-                  <li>
-                   <div class="dottedbg"></div>
-                  <lable>Address</lable>
-                  <span>115 Martin Luther King Dr NW Atlanta Georgia</span>
-                  </li>
-
-                  <li>
-                   <div class="dottedbg"></div>
-                  <lable>Hours</lable>
-                  <span>7am to 4pm</span>
-                  </li>
-                </ul>
-
-                <!--add email and other info-->
-             <!-- </div>-->
-
-
-          <div class="google-map">
-            <iframe
-                width="430"
-                height="250"
-                frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3d2TDoBv5yRjjsRTuVZ1DgapTgmXQYKE
-                &q=115 Martin Luther King Dr Se, Atlanta+Ga">
-            </iframe>
+        <div class="handle">
+          <i class="fa fa-chevron-left"></i>
+        </div>
+        <section class="map">
+          <h3>Location</h3>
+          <iframe width="270"
+                  height="280"
+                  frameborder="0"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3d2TDoBv5yRjjsRTuVZ1DgapTgmXQYKE
+                  &q=115 Martin Luther King Dr Se, Atlanta+Ga">
+          </iframe>
+          <div>
+            115 Martin Luther King Dr NW
           </div>
         </section>
       </div>
     </div>
+
+
 
     <section class="photos-left">
       <div>
@@ -311,7 +278,7 @@
   </div>
 
 
-    <!-- build:js scripts/vendor.js -->
+    <!-- build:js scripts/vendor.js
     <!-- bower:js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -324,11 +291,14 @@
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
         <script src="scripts/menu.json"></script>
-        <script src="scripts/story_text.js"></script>
-        <script src="scripts/john.js"></script>
         <script src="scripts/spencer.js"></script>
-        <script src="scripts/bob.js"></script>
+        <script src="scripts/story_text.js"></script>
+        <script src="scripts/blog.js"></script>
+        <script src="scripts/flyouts.js"></script>
+        <script src="scripts/reservation.js"></script>
+        <script src="scripts/john.js"></script>
         <!-- endbuild -->
 </body>
 
