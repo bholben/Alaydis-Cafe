@@ -49,49 +49,53 @@
       <!-- Spencer -->
 
 
-<dl class="accordion">
-  <h2>Our Menu</h2>
-  <dt class="accordion__title">Breakfast</dt>
-  <dd class="accordion__content">
-    <ul class="breakfast-items">
-    </ul>
-  </dd>
-  <dt class="accordion__title">Sandwiches</dt>
-  <dd class="accordion__content">
-    <ul class="sandwich-items">
-    </ul>
-  </dd>
-  <dt class="accordion__title">Salads</dt>
-  <dd class="accordion__content">
-    <ul class="salad-items">
-    </ul>
-  </dd>
-  <dt class="accordion__title">Soup of the Day</dt>
-  <dd class="accordion__content">
-    <ul class="soup-items">
-    </ul>
-  </dd>
-  <dt class="accordion__title">Drinks</dt>
-  <dd class="accordion__content">
-    <ul class="drink-items">
-    </ul>
-  </dd>
-  <dt class="accordion__title">Toppings & Extras</dt>
-  <dd class="accordion__content">
-    <ul class="topping-items">
-    </ul>
-  </dd>
-  <dt class="accordion__title">Desserts</dt>
-  <dd class="accordion__content">
-    <ul class="dessert-items">
-    </ul>
-  </dd>
-  <dt class="accordion__title">V-Desserts</dt>
-  <dd class="accordion__content">
-    <ul class="v-dessert-items">
-    </ul>
-  </dd>  
-</dl>
+  <dl class="accordion">
+    <h2>Our Menu</h2>
+    <dt class="accordion__title">Breakfast</dt>
+    <dd class="accordion__content">
+      <ul class="breakfast-items">
+      </ul>
+    </dd>
+    <dt class="accordion__title">Sandwiches</dt>
+    <dd class="accordion__content">
+      <ul class="sandwich-items">
+      </ul>
+    </dd>
+    <dt class="accordion__title">Salads</dt>
+    <dd class="accordion__content">
+      <ul class="salad-items">
+      </ul>
+    </dd>
+    <dt class="accordion__title">Soup of the Day</dt>
+    <dd class="accordion__content">
+      <ul class="soup-items">
+      </ul>
+    </dd>
+    <dt class="accordion__title">Drinks</dt>
+    <dd class="accordion__content">
+      <ul class="drink-items">
+      </ul>
+    </dd>
+    <dt class="accordion__title">Toppings & Extras</dt>
+    <dd class="accordion__content">
+      <ul class="topping-items">
+      </ul>
+    </dd>
+    <dt class="accordion__title">Desserts</dt>
+    <dd class="accordion__content">
+      <ul class="dessert-items">
+      </ul>
+    </dd>
+    <dt class="accordion__title">Vera's Desserts</dt>
+    <dd class="accordion__content">
+      <ul class="v-dessert-items">
+      </ul>
+    </dd>  
+  </dl>
+
+ <!--  <div class="meet-Linda">
+      <h2>Meet Linda!</h2>  
+    </div> -->
 
     <!-- <div class="content">
       <div class="content-inner">
@@ -148,17 +152,18 @@
               </div> -->
 
           <script type="text/template" id="menu-template">
-            <li>{{item}} ..... {{price}}
+            <li class="menuList">{{item}} ..... ${{price}}
             </li>
           </script>
 
           <script type="text/template" id="soups-template">
-            <li>{{item}} ..... {{price.cup}}, {{price.bowl}}
+            <li class="menuList">
+            {{item}} ..... (cup) ${{price.cup}}, (bowl) ${{price.bowl}}
             </li>
           </script>
 
           <script type="text/template" id="coffee-template">
-            <li>{{item}} ..... {{price.small}}, {{price.large}}
+            <li class="menuList">{{item}} ..... (small) ${{price.small}}, (large) ${{price.large}}
             </li>
           </script>
         </section>

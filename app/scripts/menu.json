@@ -341,7 +341,7 @@ var menu = {
 		},
 		{
 		"id": 036,
-		"item": "Broccoli & Cheddar",
+		"item": "Broccoli Cheddar",
 		"price": {
 			"cup": 3,
 			"bowl": 5
