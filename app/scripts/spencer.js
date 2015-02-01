@@ -61,7 +61,7 @@ var instaSandwich = 'https://api.instagram.com/v1/tags/amazingsandwich/media/rec
 var instaSalads = 'https://api.instagram.com/v1/tags/amazingsalads/media/recent?client_id=adcf4211a05c4d2b9290d57b3be5b155'
 var instaSoups = 'https://api.instagram.com/v1/tags/delicioussoup/media/recent?client_id=adcf4211a05c4d2b9290d57b3be5b155'
 var instaDrinks = 'https://api.instagram.com/v1/tags/espresso/media/recent?client_id=adcf4211a05c4d2b9290d57b3be5b155'
-var instaToppings = 'https://api.instagram.com/v1/tags/avocado/media/recent?client_id=adcf4211a05c4d2b9290d57b3be5b155'
+var instaToppings = 'https://api.instagram.com/v1/tags/saladtoppings/media/recent?client_id=adcf4211a05c4d2b9290d57b3be5b155'
 var instaDesserts = 'https://api.instagram.com/v1/tags/chocolatechipcookies/media/recent?client_id=adcf4211a05c4d2b9290d57b3be5b155'
 var instaVDesserts = 'https://api.instagram.com/v1/tags/redvelvetcupcakes/media/recent?client_id=adcf4211a05c4d2b9290d57b3be5b155'
 var search_results;
