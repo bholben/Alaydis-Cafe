@@ -7,7 +7,11 @@
   overflow: hidden;
   border: 1px solid black;
   transition: all 0.4s;
-  background: #f8f8f8;
+  // background: #f8f8f8;
+   border-radius: 5px;               // ADDED
+  border: 3px solid #939;           // ADDED
+  background-color: white;          // ADDED
+  color: #939;                      // ADDED
 }
 
 .handle {

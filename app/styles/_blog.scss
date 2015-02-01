@@ -13,7 +13,7 @@ section.blog {
     max-width: 50%;
     min-width: 300px;
     overflow: hidden;
-    padding: 15px;
+    padding: 4%;
 
     h2 {
       font-size: 3.5rem;
@@ -28,7 +28,7 @@ section.blog {
     }
 
     div {
-      color: black;
+      color: black;      
     }
 
     h4 {
@@ -37,6 +37,7 @@ section.blog {
       text-align: center;
       color: #AD0000;
     }
+
     p {
       color: black;
       font-size: 1.5rem;
@@ -58,3 +59,17 @@ section.blog {
     }
   }
 }
+.comment-container {
+  border-radius: 5px;
+  border: 3px solid $cPurple;
+  margin-bottom: 6%;
+  background-color: white;
+  color: $cPurple;
+  padding: 4%;
+}
+
+.leave-comment {
+  font-family: 'Pacifico', cursive;
+  padding: 0;
+}
+
