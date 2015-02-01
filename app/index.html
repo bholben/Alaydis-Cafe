@@ -10,8 +10,8 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
-
     <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css" />
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -46,71 +46,69 @@
       </div>
     </section>
 
-      <!-- Spencer -->
+    <div class="content">
+      <div class="content-inner">
+        <section class="menu">
+          <dl class="accordion">
+            <h2>Our Menu</h2>
+            <dt class="accordion__title">Breakfast</dt>
+            <dd class="accordion__content">
+              <ul class="breakfast-items">
+              </ul>
+              <div class="special breakfast-special">
+              </div>
+            </dd>
+            <dt class="accordion__title">Sandwiches</dt>
+            <dd class="accordion__content">
+              <ul class="sandwich-items">
+              </ul>
+              <div class="special sandwich-special">
+              </div>
+            </dd>
+            <dt class="accordion__title">Salads</dt>
+            <dd class="accordion__content">
+              <ul class="salad-items">
+              </ul>
+              <div class="special salad-special">
+              </div>
+            </dd>
+            <dt class="accordion__title">Soup of the Day</dt>
+            <dd class="accordion__content">
+              <ul class="soup-items">
+              </ul>
+              <div class="special soup-special">
+              </div>
+            </dd>
+            <dt class="accordion__title">Drinks</dt>
+            <dd class="accordion__content">
+              <ul class="drink-items">
+              </ul>
+              <div class="special drink-special">
+              </div>
+            </dd>
+            <dt class="accordion__title">Toppings & Extras</dt>
+            <dd class="accordion__content">
+              <ul class="topping-items">
+              </ul>
+              <div class="special topping-special">
+              </div>
+            </dd>
+            <dt class="accordion__title">Desserts</dt>
+            <dd class="accordion__content">
+              <ul class="dessert-items">
+              </ul>
+              <div class="special dessert-special">
+              </div>
+            </dd>
+            <dt class="accordion__title">Vera's Desserts</dt>
+            <dd class="accordion__content">
+              <ul class="v-dessert-items">
+              </ul>
+              <div class="special v-dessert-special">
+              </div>
+            </dd>
+          </dl>
 
-<!-- MENU ACCORDION -->
-  <dl class="accordion">
-    <h2>Our Menu</h2>
-    <dt class="accordion__title">Breakfast</dt>
-    <dd class="accordion__content">      
-      <ul class="breakfast-items">        
-      </ul>
-      <div class="special breakfast-special">
-      </div>      
-    </dd>
-    <dt class="accordion__title">Sandwiches</dt>
-    <dd class="accordion__content">
-      <ul class="sandwich-items">
-      </ul>
-      <div class="special sandwich-special">
-      </div> 
-    </dd>
-    <dt class="accordion__title">Salads</dt>
-    <dd class="accordion__content">
-      <ul class="salad-items">
-      </ul>
-      <div class="special salad-special">
-      </div> 
-    </dd>
-    <dt class="accordion__title">Soup of the Day</dt>
-    <dd class="accordion__content">
-      <ul class="soup-items">
-      </ul>
-      <div class="special soup-special">
-      </div> 
-    </dd>
-    <dt class="accordion__title">Drinks</dt>
-    <dd class="accordion__content">
-      <ul class="drink-items">
-      </ul>
-      <div class="special drink-special">
-      </div> 
-    </dd>
-    <dt class="accordion__title">Toppings & Extras</dt>
-    <dd class="accordion__content">
-      <ul class="topping-items">
-      </ul>
-      <div class="special topping-special">
-      </div> 
-    </dd>
-    <dt class="accordion__title">Desserts</dt>
-    <dd class="accordion__content">
-      <ul class="dessert-items">
-      </ul>
-      <div class="special dessert-special">
-      </div> 
-    </dd>
-    <dt class="accordion__title">Vera's Desserts</dt>
-    <dd class="accordion__content">
-      <ul class="v-dessert-items">
-      </ul>
-      <div class="special v-dessert-special">
-      </div> 
-    </dd>  
-  </dl>
-
-
-  <!-- TEMPLATE FOR MENU ITEMS JAVASCRIPT -->
           <script type="text/template" id="menu-template">
             <li class="menuList">{{item}} ..... ${{price}}
             </li>
@@ -126,13 +124,6 @@
             <li class="menuList">{{item}} ..... (small) ${{price.small}}, (large) ${{price.large}}
             </li>
           </script>
-        </section>
-
-
-        <section class="photos-primary">
-          <h2>Come Meet Us</h2>
-          <p>Add the best photos here</p>
-          <img src="" alt="">
         </section>
 
         <section class="blog">
@@ -170,38 +161,38 @@
           <form action="/" method="post" id="reservationsForm">
 
             <div class="row">
-              <div class="small-3 large-2 columns">
+              <div class="small-4 columns">
                 <span class="prefix">Name</span>
               </div>
-              <div class="small-9 large-10 columns">
+              <div class="small-8 columns">
                 <input type="text" name="fullName" placeholder="Full name...">
               </div>
             </div>
 
             <div class="row">
-              <div class="small-3 large-2 columns">
+              <div class="small-4 columns">
                 <span class="prefix">Date</span>
               </div>
-              <div class="small-9 large-10 columns">
+              <div class="small-8 columns">
                 <input type="date" name="date">
               </div>
             </div>
 
             <div class="row">
-              <div class="small-3 large-2 columns">
+              <div class="small-4 columns">
                 <span class="prefix">Party No.</span>
               </div>
-              <div class="small-9 large-10 columns">
+              <div class="small-8 columns">
                 <input type="number" name="numParty" placeholder="1-20">
               </div>
             </div>
 
             <div class="row">
-              <div class="small-3 large-2 columns">
+              <div class="small-4 columns">
                 <span class="prefix">Seating Preference</span>
               </div>
 
-              <div class="small-9 large-10 columns">
+              <div class="small-8 columns">
                 <select type="text" name="seatingPref">
                   <option value="indoor">Indoor</option>
                   <option value="outdoor">Outdoor</option>
@@ -210,20 +201,25 @@
             </div>
 
             <div class="row">
-              <div class="small-12 large-12 columns">
-                <textarea name="notes" placeholder="Special notes..."></textarea>
+              <div class="small-12 columns">
+                <textarea name="notes" rows="5" placeholder="Special notes..."></textarea>
               </div>
             </div>
 
             <div class="row">
-              <div class="small-6 large-6 columns confirm-reservation hide">
-                <span class="prefix">Thanks. See you soon.</span>
-              </div>
               <input type="submit" value="Reserve Table">
+            </div>
+
+            <div class>
+              <div class="small-12 columns confirm-reservation hide"></div>
             </div>
 
           </form>
         </section>
+        <div class="handle-left">
+          <span>RSVP</span>
+          <i class="fa fa-chevron-right"></i>
+        </div>
       </div>
 
       <div class="flyout flyout-right">
@@ -281,6 +277,7 @@
           </div>
         </section>
       </div>
+    </div>
 
     <section class="photos-left">
       <div>
