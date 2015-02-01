@@ -77,10 +77,10 @@ $.ajax({
     img_urls = _.map(data.data, function(d) {return d.images.standard_resolution.url;
     });
 
-    for (var i = 3; i < 5; i++) {
-      var img = '<li>' + '<img class="menuPics" src="' + img_urls[i] + '"/>' + '</li>';
+    for (var i = 4; i < 5; i++) {
+      var img = '<h4>Today\'s Special!</h4>' + '<span>' + '<img class="menuPics" src="' + img_urls[i] + '"/>' + '</span>';
 
-      $('.breakfast-items').append(img)
+      $('.breakfast-special').append(img)
     }
   }
 });
@@ -95,10 +95,10 @@ $.ajax({
     img_urls = _.map(data.data, function(d) {return d.images.standard_resolution.url;
     });
 
-    for (var i = 3; i < 5; i++) {
-      var img = '<li>' + '<img class="menuPics" src="' + img_urls[i] + '"/>' + '</li>';
+    for (var i = 4; i < 5; i++) {
+      var img = '<h4>Today\'s Special!</h4>' + '<span>' + '<img class="menuPics" src="' + img_urls[i] + '"/>' + '</span>';
 
-      $('.sandwich-items').append(img)
+      $('.sandwich-special').append(img)
     }
   }
 });
@@ -113,10 +113,10 @@ $.ajax({
     img_urls = _.map(data.data, function(d) {return d.images.standard_resolution.url;
     });
 
-    for (var i = 3; i < 5; i++) {
-      var img = '<li>' + '<img class="menuPics" src="' + img_urls[i] + '"/>' + '</li>';
+    for (var i = 4; i < 5; i++) {
+      var img = '<h4>Today\'s Special!</h4>' + '<span>' + '<img class="menuPics" src="' + img_urls[i] + '"/>' + '</span>';
 
-      $('.salad-items').append(img)
+      $('.salad-special').append(img)
     }
   }
 });
@@ -132,9 +132,9 @@ $.ajax({
     });
 
     for (var i = 4; i < 5; i++) {
-      var img = '<li>' + '<img class="menuPics" src="' + img_urls[i] + '"/>' + '</li>';
+      var img = '<h4>Today\'s Special!</h4>' + '<span>' + '<img class="menuPics" src="' + img_urls[i] + '"/>' + '</span>';
 
-      $('.soup-items').append(img)
+      $('.soup-special').append(img)
     }
   }
 });
@@ -149,10 +149,10 @@ $.ajax({
     img_urls = _.map(data.data, function(d) {return d.images.standard_resolution.url;
     });
 
-    for (var i = 3; i < 5; i++) {
-      var img = '<li>' + '<img class="menuPics" src="' + img_urls[i] + '"/>' + '</li>';
+    for (var i = 4; i < 5; i++) {
+      var img = '<h4>Today\'s Special!</h4>' + '<span>' + '<img class="menuPics" src="' + img_urls[i] + '"/>' + '</span>';
 
-      $('.drink-items').append(img)
+      $('.drink-special').append(img)
     }
   }
 });
@@ -168,9 +168,9 @@ $.ajax({
     });
 
     for (var i = 1; i < 2; i++) {
-      var img = '<li>' + '<img class="menuPics" src="' + img_urls[i] + '"/>' + '</li>';
+      var img = '<h4>Today\'s Special!</h4>' + '<span>' + '<img class="menuPics" src="' + img_urls[i] + '"/>' + '</span>';
 
-      $('.topping-items').append(img)
+      $('.topping-special').append(img)
     }
   }
 });
@@ -185,10 +185,10 @@ $.ajax({
     img_urls = _.map(data.data, function(d) {return d.images.standard_resolution.url;
     });
 
-    for (var i = 1; i < 3; i++) {
-      var img = '<li>' + '<img class="menuPics" src="' + img_urls[i] + '"/>' + '</li>';
+    for (var i = 1; i < 2; i++) {
+      var img = '<h4>Today\'s Special!</h4>' + '<span>' + '<img class="menuPics" src="' + img_urls[i] + '"/>' + '</span>';
 
-      $('.dessert-items').append(img)
+      $('.dessert-special').append(img)
     }
   }
 });
@@ -204,9 +204,9 @@ $.ajax({
     });
 
     for (var i = 1; i < 2; i++) {
-      var img = '<li>' + '<img class="menuPics" src="' + img_urls[i] + '"/>' + '</li>';
+      var img = '<h4>Today\'s Special!</h4>' + '<span>' + '<img class="menuPics" src="' + img_urls[i] + '"/>' + '</span>';
 
-      $('.v-dessert-items').append(img)
+      $('.v-dessert-special').append(img)
     }
   }
 });

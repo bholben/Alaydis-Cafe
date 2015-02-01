@@ -10,10 +10,7 @@
   }
 }
 
-
-
 // NEW ACCORDION
-
 
 .accordion {
   @include outer-container;
@@ -76,7 +73,8 @@
 }
 
 .overflow-scrolling {
-  padding: 3.5em;
+  padding: 5em 1em;
+  overflow: auto;
 }
 
 // MOBILE
@@ -149,30 +147,82 @@
 
 
 //Menu List and Pics
+.breakfast-items {
+  overflow: auto;
+  @include span-columns(8);
+  @include omega();
+}
 
-  .menuList {
+.sandwich-items {
+  overflow: auto;
+  @include span-columns(8);
+  @include omega();
+}
+.salad-items {
+  overflow: auto;
+  @include span-columns(8);
+  @include omega();
+}
+.soup-items {
+  overflow: auto;
+  @include span-columns(8);
+  @include omega();
+}
+.drink-items {
+  overflow: auto;
+  @include span-columns(8);
+  @include omega();
+}
+.topping-items {
+  overflow: auto;
+  @include span-columns(8);
+  @include omega();
+}
+.dessert-items {
+  overflow: auto;
+  @include span-columns(8);
+  @include omega();
+}
+.v-dessert-items {
+  overflow: auto;
+  @include span-columns(8);
+  @include omega();
+}
+
+.special {
+  overflow: auto;
+  @include span-columns(4);
+  display: inline;
+
+  h4 {
+    float: right;
+    font-size: 2.2em;
+    margin: 2% 0px;
+    font-size: 1.9em;
+    color: $cPink; 
+  } 
+  .menuPics {
+    @include outer-container;
+    display: inline-block;
+    width: 17em;
+    float: right;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin: 2%;
+    text-decoration: none;
+    cursor: default;
+
+  }
+}
+
+.menuList {
     @include span-columns(8);
-    display: inline;
-    padding: 0;
-
-    li:before {
-    float: left;
-    width: 0;
-    white-space: nowrap;
-    content:
-      ". . . . . . . . . . . . . . . . . . . . . . . . ";
-    }
+    display: inline-block;
+    padding: 2% 0;
+    width: 100%;
   }
 
-.menuPics {
-  @include span-columns(4);
 
-  display: inline-block;
-  width: 175px;
-  float: right;
-  border: 5px solid black;
-  border-radius: 5px;
-  margin: 2%;
-  text-decoration: none;
-  cursor: default;
-}
+
+
+
