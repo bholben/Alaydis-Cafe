@@ -1115,41 +1115,68 @@ var photolist = [
 "stat": "ok"
 }
 ]
-		/*	need function to make the dropdown menu functional
 
-			function showGallery(){
-	
+var ids = new Array();
+var titles = new Array();
+
+		function showGallery(){
+			var sel = document.getElementById("Galleries");
+			var selectedID = sel.options[sel.selectedIndex].value;
+			
+			$(".largeImageWrap").each(function(i){
+				$(this).remove()
+			
+			});
+				
+				$(".sliderGallery_Wrap").each(function(i){
+					$(this).remove()
+			});
+
+				$('#flickrTest').flickrGallery({
+				galleryHeight : 'auto',
+				useFlickr: 'true',
+				useFlickrLargeSize: 'true',
+				useHoverIntent: 'true',
+				flickrAPIKey: '2d31d51537b23ddfe8ca37e7a75ba732',
+				photosetID: selectedID,
+				useLightBox: 'true',
+				per_page: 50
+			});
+			}
 
 
-$(document).ready(function(){
-			$.getJSON("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=4a0d023b2535d7e0c2cab4a59bedc766&tags=underground+atlanta&format=json&nojsoncallback=1&auth_token=72157650565182742-56dd47810683a2cd&api_sig=d7ae6eba28dec2d019c372ba4476e638
-				&format=json&jsoncallback=?",
+		$().ready(function(){
+		$.getJSON("http://api.flickr.com/services/rest/? & method=flickr.photosets.getList
+			& api_key=2d31d51537b23ddfe8ca37e7a75ba732 & user_id=131037413@N02 & format=json&jsoncallback=?",
+
 
 				function(data){
-				var photoID = "";
-				var title = "";
+					var photo.ID = "";
+					var title = "";
+				
 					$.each(data.photos.photo, function(i,set){
-					photoID = photo.ids[0];
-					title = "Atlanta Underground";
-					ids.push(photoID);
-					titles.push(title);
-				});
-			});
-		});
+						photoID = set.id;
+						title = set.title;
+						ids.push(photoID);
+						titles.push(title);
+					});
 
-/*ties the photo array itmes to the dropdown menU
-				for(i=0; i<ids.length;i++){
-					var option = new Option(titles[i],ids[i]);
-					var dropDown = document.getElementById("Galleries");
+					for(i=0; i<ids.length;i++){
+						var option = new Option(titles[i],ids[i]);
+						var dropDown = document.getElementById("Galleries");
 						dropDown.options[i] = option;
-					}
+			}
 
-/*html for drop down menu*/
-/*<label>Please select a Gallery from the drop-down menu to view.</label>
-	
-	<form action="" method="get" name="choose_gallery" id="choose_gallery">
-		<select name="Galleries" id="Galleries" onchange="showGallery();"></select>
-	</form>*/
-
-
+		$('#flickrTest').flickrGallery({
+			galleryHeight : 'auto',
+			useFlickr: 'true',
+			useFlickrLargeSize: 'true',
+			useHoverIntent: 'true',
+			flickrAPIKey: 'a22b1a90b000578e1854ebdb3a3b5ba7',
+			photoID: ids[0],
+			useLightBox: 'true',
+			per_page: 50
+		});
+	});
+});
 
