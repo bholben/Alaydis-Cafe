@@ -10,12 +10,14 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
-
     <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css" />
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
     <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah|Rock+Salt' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
@@ -29,7 +31,7 @@
           <ul class="social">
             <li><a href="http://www.facebook.com">
 
-            <img src="images/social/facebook_circle.png"></a>/</li>
+            <img src="images/social/facebook_circle.png"></a></li>
 
             </a></li>
 
@@ -42,101 +44,123 @@
       </header>
 
       <div class= "welcome-container">
-        <img src="images/final-logo.png">
+        <img id="top-page" src="images/final-logo.png">
+        <div class="information">
+          <ul>
+            <li>Monday - Friday | 7AM - 6PM</li>
+            <li>Saturday if we feel like it...</li>
+            <li class="phone-num">(404)-906-2422</li>
+            <li></li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <div class="content">
       <div class="content-inner">
-        <section class="menu BOB-TEMP">
-
-          <h2>Our Menu</h2>
-
-              <div class="breakfast">
-                <h4>Breakfast</h4>
-                <ul class ="breakfast-items">
-                </ul>
+        <section class="menu">
+          <dl class="accordion">
+            <h2>Our Menu</h2>
+            <dt class="accordion__title">Breakfast</dt>
+            <dd class="accordion__content">
+              <ul class="breakfast-items">
+              </ul>
+              <div class="special breakfast-special">
               </div>
-
-              <div class="sandwiches">
-                <h4>Sandwiches</h4>
-                <ul class ="sandwich-items">
-                </ul>
+            </dd>
+            <dt class="accordion__title">Sandwiches</dt>
+            <dd class="accordion__content">
+              <ul class="sandwich-items">
+              </ul>
+              <div class="special sandwich-special">
               </div>
-
-              <div class="salads">
-                <h4>Salads</h4>
-                <ul class ="salad-items">
-                </ul>
+            </dd>
+            <dt class="accordion__title">Salads</dt>
+            <dd class="accordion__content">
+              <ul class="salad-items">
+              </ul>
+              <div class="special salad-special">
               </div>
-
-              <div class="soup">
-                <h4>Soup of the Day</h4>
-                <ul class="soup-items">
-                </ul>
+            </dd>
+            <dt class="accordion__title">Soup of the Day</dt>
+            <dd class="accordion__content">
+              <ul class="soup-items">
+              </ul>
+              <div class="special soup-special">
               </div>
-
-              <div class="drinks">
-                <h4>Drinks</h4>
-                <ul class="drink-items">
-                </ul>
+            </dd>
+            <dt class="accordion__title">Drinks</dt>
+            <dd class="accordion__content">
+              <ul class="drink-items">
+              </ul>
+              <div class="special drink-special">
               </div>
-
-              <div class="toppings">
-                <h4>Toppings & Extras</h4>
-                <ul class="topping-items">
-                </ul>
+            </dd>
+            <dt class="accordion__title">Toppings & Extras</dt>
+            <dd class="accordion__content">
+              <ul class="topping-items">
+              </ul>
+              <div class="special topping-special">
               </div>
-
-              <div class="desserts">
-                <h4>Desserts</h4>
-                <ul class="dessert-items">
-                </ul>
+            </dd>
+            <dt class="accordion__title">Desserts</dt>
+            <dd class="accordion__content">
+              <ul class="dessert-items">
+              </ul>
+              <div class="special dessert-special">
               </div>
-
-              <div class="v-desserts">
-                <h4>Veras Desserts</h4>
-                <ul class="v-dessert-items">
-                </ul>
+            </dd>
+            <dt class="accordion__title">Vera's Desserts</dt>
+            <dd class="accordion__content">
+              <ul class="v-dessert-items">
+              </ul>
+              <div class="special v-dessert-special">
               </div>
+            </dd>
+          </dl>
 
           <script type="text/template" id="menu-template">
-            <li>{{item}} ..... {{price}}
+            <li class="menuList">{{item}} ..... ${{price}}
             </li>
           </script>
 
           <script type="text/template" id="soups-template">
-            <li>{{item}} ..... {{price.cup}}, {{price.bowl}}
+            <li class="menuList">
+            {{item}} ..... (cup) ${{price.cup}}, (bowl) ${{price.bowl}}
             </li>
           </script>
 
           <script type="text/template" id="coffee-template">
-            <li>{{item}} ..... {{price.small}}, {{price.large}}
+            <li class="menuList">{{item}} ..... (small) ${{price.small}}, (large) ${{price.large}}
             </li>
           </script>
         </section>
 
-        <section class="photos-primary">
-          <h2>Come Meet Us</h2>
-          <p>Add the best photos here</p>
-          <img src="" alt="">
-        </section>
-
+      
         <section class="blog">
           <article class="story">
-            <h2>Our Story</h2>
+            <h2>Alaydi's Story</h2>
+            <img src="images/linda_kasim.jpg">
             <div></div>
           </article>
 
           <article class="news">
-            <h2>Latest News</h2>
+            <h2>Kitchen Blog</h2>
             <script type="text/template" id="latestNewsTemplate">
               <h4>{{ title }}</h4>
               <p>{{ post }}</p>
             </script>
           </article>
+        </section>
 
-          <div id="disqus_thread"></div>
+        <div class="comment-container">
+        <h2 class="leave-comment">
+          Graciously Accepting your Gratutitous Comments
+        </h2>
+
+          <div id="disqus_thread">
+            <p></p>
+          </div>
           <script type="text/javascript">
             // CUSTOM CONFIGURATION
             var disqus_shortname = 'alaydiscafe';
@@ -149,46 +173,49 @@
           </script>
 
           <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </section>
+        </div> 
+      
+
       </div>
 
       <div class="flyout flyout-left">
         <section class="reservations">
+          <h3>Reserve a Table</h3>
           <form action="/" method="post" id="reservationsForm">
 
             <div class="row">
-              <div class="small-3 large-2 columns">
+              <div class="small-4 columns">
                 <span class="prefix">Name</span>
               </div>
-              <div class="small-9 large-10 columns">
+              <div class="small-8 columns">
                 <input type="text" name="fullName" placeholder="Full name...">
               </div>
             </div>
 
             <div class="row">
-              <div class="small-3 large-2 columns">
+              <div class="small-4 columns">
                 <span class="prefix">Date</span>
               </div>
-              <div class="small-9 large-10 columns">
+              <div class="small-8 columns">
                 <input type="date" name="date">
               </div>
             </div>
 
             <div class="row">
-              <div class="small-3 large-2 columns">
+              <div class="small-4 columns">
                 <span class="prefix">Party No.</span>
               </div>
-              <div class="small-9 large-10 columns">
+              <div class="small-8 columns">
                 <input type="number" name="numParty" placeholder="1-20">
               </div>
             </div>
 
             <div class="row">
-              <div class="small-3 large-2 columns">
+              <div class="small-4 columns">
                 <span class="prefix">Seating Preference</span>
               </div>
 
-              <div class="small-9 large-10 columns">
+              <div class="small-8 columns">
                 <select type="text" name="seatingPref">
                   <option value="indoor">Indoor</option>
                   <option value="outdoor">Outdoor</option>
@@ -197,23 +224,29 @@
             </div>
 
             <div class="row">
-              <div class="small-12 large-12 columns">
-                <textarea name="notes" placeholder="Special notes..."></textarea>
+              <div class="small-12 columns">
+                <textarea name="notes" rows="5" placeholder="Special notes..."></textarea>
               </div>
             </div>
 
             <div class="row">
-              <div class="small-6 large-6 columns confirm-reservation hide">
-                <span class="prefix">Thanks. See you soon.</span>
-              </div>
               <input type="submit" value="Reserve Table">
+            </div>
+
+            <div class="row">
+              <div class="small-12 columns confirm-reservation hide"></div>
             </div>
 
           </form>
         </section>
+        <div class="handle">
+          <span>Reserve a Table Here</span>
+          <i class="fa fa-chevron-right"></i>
+        </div>
       </div>
 
       <div class="flyout flyout-right">
+
         <section class="contact">
           <!--<h2>Our Location</h2>
               <div class="leftcol">
@@ -256,10 +289,28 @@
                 <!--add email and other info-->
              <!-- </div>-->
 
-             <iframe src="https://www.flickr.com/photos/24608030@N06/14976403570/in/photolist-peDtSM-oqaYA2-o5BDNm-qj2Vxw-p4SAhb-oPpZ1E-oPq46o-pu8i4A-pei896-p8eDE3-pXpJP5-qxY5B7-p7ssPT-oP2u9L-oP2bgF-qWEbk3-qy2UAv-qgtYes-qgtZaL-q4b1ij-oGNKjF-qB7arH-q1BY4Q-qMFsNR-q1RVeQ-pSipki-pJVnh5-pGymZG-oN2yPr-qmJx8C-quhuUb-qAeY7f-pHox3c-qAmVYp-pVPb3d-pf3VFd-nWebBb-oVA8LW-p1qdZS-quqfyP-prCwaG-pDWKfy-oXAd1b-qe67Te-paeEYD-pQzMgJ-oxR6w6-p1kY7Z-qYxrpH-p38LGF/player/" width="640" height="360" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+            
           
+
+        <div class="handle">
+          <i class="fa fa-chevron-left"></i>
+        </div>
+        <section class="map">
+          <h3>Location</h3>
+          <iframe width="270"
+                  height="280"
+                  frameborder="0"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3d2TDoBv5yRjjsRTuVZ1DgapTgmXQYKE
+                  &q=115 Martin Luther King Dr Se, Atlanta+Ga">
+          </iframe>
+          <div>
+            115 Martin Luther King Dr NW
+          </div>
         </section>
       </div>
+    </div>
+
+
 
     <section class="photos-left">
       <div>
@@ -273,7 +324,7 @@
   </div>
 
 
-    <!-- build:js scripts/vendor.js -->
+    <!-- build:js scripts/vendor.js
     <!-- bower:js -->
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -285,13 +336,17 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/menu.json"></script>
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <script src="scripts/menu.json"></script>
+        <script src="scripts/spencer.js"></script>
+        <script src="scripts/story_text.js"></script>
+        <script src="scripts/blog.js"></script>
+        <script src="scripts/flyouts.js"></script>
+        <script src="scripts/reservation.js"></script>
+        <script src="scripts/john.js"></script>
+        <!-- endbuild -->
+</body>
 
-    <script src="scripts/story_text.js"></script>
-    <script src="scripts/john.js"></script>
-    <script src="scripts/spencer.js"></script>
-    <script src="scripts/bob.js"></script>
-    <!-- endbuild -->
-  </body>
 </html>
+

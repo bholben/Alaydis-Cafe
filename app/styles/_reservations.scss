@@ -1,8 +1,11 @@
 
 section.reservations {
-  padding: 30px;
+  float: left;
+  width: $flyoutWidth - $handleWidth;
+  padding: 20px 0 20px 10px;
   form {
-    .prefix, input, textarea {
+    overflow: scroll;
+    .prefix, input, textarea, select {
       font-family: Helvetica, Arial;
       font-size: 1.3rem;
     }
@@ -12,11 +15,19 @@ section.reservations {
     .columns {
       padding: 0;
     }
-    .confirm-reservation span {
-      background-color: $cAlaydi;
-      color: white;
-      border: 1px solid black;
+    .confirm-reservation {
+      text-align: right;
+      margin-top: 15px;
     }
   }
 }
 
+.handle {
+  span {    
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+}

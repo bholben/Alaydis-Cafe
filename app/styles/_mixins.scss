@@ -6,7 +6,25 @@
 
 @mixin chalkboard() {
   background-image: url("/images/alaydi_chalkboard.jpg");
-  border: 10px solid black;
-  border-radius: 2px;
+  border-radius: 5px;
+  font-family: 'Gloria Hallelujah', cursive;
   color: $cYellow;
+  border: 15px solid black;
+
+  h1, h2, h3, h4, h5 {
+  //Spencer added 1/28/15
+  font-family: 'Rock Salt', cursive;
+  margin: 0;
+  padding: 0;
+	}
+
+	ul, li, p, span, a {
+  font-family: 'Gloria Hallelujah', cursive;
+	}
 }
+
+@mixin innerChalkboard() {
+  background-image: url("/images/alaydi_chalkboard.jpg");
+  color: $cYellow;
+  border-top: 5px solid black;
+ }

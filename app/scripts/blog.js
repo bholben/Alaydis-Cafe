@@ -1,8 +1,4 @@
 
-// Change template engine settings to use {{ }} syntax.
-_.templateSettings = { interpolate: /\{\{(.+?)\}\}/g };
-
-
 var fullNewsPost,
     shortStoryText,
     latestNewsTemplate;
@@ -59,36 +55,3 @@ $('.blog').on('click', 'article a.expand', function (e) {
 //     $('article.news p').html(shortNewsPost);
 //   }
 // });
-
-var reservationEndPoint = 'http://tiy-atl-fe-server.herokuapp.com/collections/alaydis';
-
-$('#reservationsForm').submit(function (e) {
-  e.preventDefault();
-
-  var form = $(this),
-      formData = {
-        fullName: form.find('input[name="fullName"]').val(),
-        numParty: form.find('input[name="numParty"]').val(),
-        date: form.find('input[name="date"]').val(),
-        notes: form.find('textarea[name="notes"]').val(),
-        seatingPref: form.find('select[name="seatingPref"]').val(),
-      };
-
-      console.log(formData);
-      form[0].reset();
-
-  $.post(reservationEndPoint, formData)
-  .done(function (data) {
-    console.log(data);
-    $('.confirm-reservation').removeClass('hide');
-  })
-  .fail(function (jqXHR) {
-    var msg = 'Error retrieving data from server. ';
-    $('section.reservations').append('<p class="error">' + msg + '</p>');
-    console.log(msg + jqXHR.statusText);
-  });
-
-});
-
-
-

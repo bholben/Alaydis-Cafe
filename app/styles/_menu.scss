@@ -1,51 +1,228 @@
-    section.menu {
-      @include outer-container;
-      @include chalkboard;
-      text-align: center;
-      margin: 2% auto;
-      h2 {
-        text-align: center;
-        color: #fff;
-        margin: 3% auto;
-      }
-      ul {
-        margin: 2% 0;
-      }
-      .breakfast{
-        @include span-columns(6 of 12);
-        color: $cBlue;
-      }
-      .sandwiches {
-        @include span-columns(6 of 12);
-        @include omega();  
-        display: inline-block;  
-        color: $cYellow;     
-      }
-      .salads {
-        @include span-columns(6 of 12);
-        color: $cGreen;
-      }
-      .soup {
-        @include span-columns(6 of 12);
-        @include omega();
-        color: $cPink;
-      }
-      .drinks {
-        @include span-columns(6 of 12);
-        color: $cBlue;
-      }
-      .toppings {
-        @include span-columns(6 of 12);
-        @include omega();
-        color: $cYellow;
-      }
-      .desserts {
-        @include span-columns(6 of 12);
-        color: $cGreen;
-      }
-      .v-desserts {
-        @include span-columns(6 of 12);
-        @include omega();    
-        color: $cPink;
-      }
-    }
+//MEET LINDA
+
+.meet-Linda {
+  @include outer-container;
+  h2 {
+
+  }
+  img {
+    width: 300px;
+  }
+}
+
+// NEW ACCORDION
+
+.accordion {
+  @include outer-container;
+  @include chalkboard;
+  margin: 2em auto;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  font-size: 1em;
+  position: relative;  
+
+  h2 {
+    margin: .5em auto;
+  }
+}
+
+.accordion__title {
+  padding: 0 .8em;
+  color: #fff;
+  float: left;
+  cursor: pointer;
+  font-size: 2em;
+  display: block;
+  border-radius: 10px;
+}
+
+.no-js .accordion__title {
+  float: none;
+  height:auto;
+  cursor:auto;
+  margin:0;
+  padding:0 2em;
+}
+
+.accordion__content {
+  float: right;
+  width: 100%;
+  margin: 3em 0 0 -100%;
+  padding: 2em;
+}
+
+.no-js .accordion__content {
+  float:left;
+  margin:0;
+}
+
+.accordion__title:hover,
+.accordion__title.active {
+  background: black;
+  color: white;
+}
+
+.no-js .accordion__title:hover {
+  background: black;
+  color: white;
+}
+
+.accordion__title.active {
+  // border-top-color: black;
+}
+
+.overflow-scrolling {
+  padding: 5em 1em;
+  overflow: auto;
+}
+
+// MOBILE
+@media (max-width: 48em) {
+  
+  .accordion {
+    // border: 1px solid grey;
+  }
+  
+  .accordion__title,
+  .accordion__content { 
+    float: none;
+    margin: 0;
+  }
+  
+  .accordion__title:first-child {
+    border:none;
+  }
+  
+ .accordion__title.active {
+  // border-top-color: black;
+  }
+  
+  .accordion__title.active, .accordion__title:hover {
+    background: black;
+    border-radius: 0px;
+  }
+  
+  .accordion__title:before {
+  content:"+";
+  text-align:center;
+  width:2em;
+  display:inline-block;
+  }
+ .accordion__title.active:before {
+  content:"-";
+  }
+  
+ .overflow-scrolling {
+  overflow-y: scroll;
+  height:11em;
+  padding:1em 1em 0 1em;
+  -webkit-overflow-scrolling: touch;
+  }
+
+  .accordion__content {
+    position:relative;
+    overflow:hidden;
+    padding:0;
+  }
+  
+   .no-js .accordion__content {
+    padding:1em;
+    overflow:auto;
+    display:block;
+  }
+  
+  .accordion__content:after {
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    height:50px;
+    border-radius:10px 0 0 10px / 50% 0 0 50%;
+    box-shadow:-5px 0 10px rgba(0, 0, 0, 0.5);
+    content:'';
+}
+   
+}
+
+
+//Menu List and Pics
+.breakfast-items {
+  overflow: auto;
+  @include span-columns(8);
+  @include omega();
+}
+
+.sandwich-items {
+  overflow: auto;
+  @include span-columns(8);
+  @include omega();
+}
+.salad-items {
+  overflow: auto;
+  @include span-columns(8);
+  @include omega();
+}
+.soup-items {
+  overflow: auto;
+  @include span-columns(8);
+  @include omega();
+}
+.drink-items {
+  overflow: auto;
+  @include span-columns(8);
+  @include omega();
+}
+.topping-items {
+  overflow: auto;
+  @include span-columns(8);
+  @include omega();
+}
+.dessert-items {
+  overflow: auto;
+  @include span-columns(8);
+  @include omega();
+}
+.v-dessert-items {
+  overflow: auto;
+  @include span-columns(8);
+  @include omega();
+}
+
+.special {
+  overflow: auto;
+  @include span-columns(4);
+  display: inline;
+
+  h4 {
+    float: right;
+    font-size: 2.2em;
+    margin: 2% 0px;
+    font-size: 1.9em;
+    color: $cPink; 
+  } 
+  .menuPics {
+    @include outer-container;
+    display: inline-block;
+    width: 17em;
+    float: right;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin: 2%;
+    text-decoration: none;
+    cursor: default;
+
+  }
+}
+
+.menuList {
+    @include span-columns(8);
+    display: inline-block;
+    padding: 2% 0;
+    width: 100%;
+  }
+
+
+
+
+

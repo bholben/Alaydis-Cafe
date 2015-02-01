@@ -1,0 +1,63 @@
+
+.flyout {
+  position: absolute;
+  top: 50px;
+  width: $flyoutWidth + 8px;
+  height: $flyoutHeight;
+  overflow: hidden;
+  border: 1px solid black;
+  transition: all 0.4s;
+  border-radius: 5px;
+  border: 3px solid $cPurple;
+  background-color: white;
+  color: $cPurple;
+  h3 {
+    padding-bottom: 10px;
+  }
+}
+
+.handle {
+  width: $handleWidth;
+  height: $flyoutHeight;
+  line-height: $flyoutHeight;
+  text-align: center;
+  cursor: pointer;
+  .fa {
+    font-size: 24px;
+    color: $cGray6;
+  }
+}
+
+.flyout-left {
+  left: $hiddenWidth;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+  .handle {
+    float: right;
+    span {
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.flyout-left-open {
+  left: 0;
+}
+
+.flyout-right {
+  right: $hiddenWidth;
+  width: $flyoutWidth + 8px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+  .handle {
+    float: left;
+    width: 30px;
+  }
+}
+
+.flyout-right-open {
+  right: 0;
+}
+
