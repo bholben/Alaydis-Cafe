@@ -1,0 +1,52 @@
+
+.flyout {
+  position: absolute;
+  top: 50px;
+  width: $flyoutWidth + 2px;
+  height: $flyoutHeight;
+  overflow: hidden;
+  border: 1px solid black;
+  transition: all 0.4s;
+  background: #f8f8f8;
+}
+
+.handle {
+  width: $handleWidth;
+  height: $flyoutHeight;
+  line-height: $flyoutHeight;
+  text-align: center;
+  cursor: pointer;
+  .fa {
+    font-size: 24px;
+    color: $cGray6;
+  }
+}
+
+.flyout-left {
+  left: $hiddenWidth;
+  .handle {
+    float: right;
+    span {
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.flyout-left-open {
+  left: 0;
+}
+
+.flyout-right {
+  right: $hiddenWidth;
+  .handle {
+    float: left;
+    span {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.flyout-right-open {
+  right: 0;
+}
+

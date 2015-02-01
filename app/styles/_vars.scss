@@ -1,5 +1,11 @@
-$pageWidth: 1000px;
+
+$pageWidth: 68em;
 $mobileBreakPoint: 400px;
+
+$flyoutHeight: 360px;
+$flyoutWidth: 320px;
+$handleWidth: 50px;
+$hiddenWidth: $handleWidth - $flyoutWidth;
 
 $cAlaydi: #a33;
 $cGray3: #333;
@@ -11,3 +17,4 @@ $cYellow: #F3FFAC; //used for standard text
 $cBlue: #7BDAF6;  //used for links
 $cPink: #FFBFFB;
 $cGreen: #B4F1AC;
+

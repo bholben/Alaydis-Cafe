@@ -20,42 +20,15 @@
 }
 
 @import 'menu';
-
-.content .content-inner .BOB-TEMP {
-  width: 60%;
-  height: 600px;
-  overflow: hidden;
-  margin: 0;
-  float: left;
-}
-
-@import 'photos-primary';
 @import 'blog';
 
-$flyoutWidth: 400px;
-
-.flyout {
-  position: absolute;
-  top: 50px;
-  width: $flyoutWidth;
-  height: 300px;
-}
-
-.flyout-left {
-  left: 50px - $flyoutWidth;
-  background: lightblue;
-}
-
-.flyout-right {
-  right: 50px - $flyoutWidth;
-  background: brown;
-}
-
-@import 'contact';
-
-
+@import 'flyouts';
 @import 'reservations';
+@import 'contact';
 
 @import 'sidebar-photos';
 
+.TEMP-BOB-CONTACT {
+  padding: 30px;
+}
 
