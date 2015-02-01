@@ -2,9 +2,10 @@
 $pageWidth: 68em;
 $mobileBreakPoint: 400px;
 
+$flyoutHeight: 360px;
 $flyoutWidth: 320px;
-$revealedWidth: 50px;
-$hiddenWidth: $revealedWidth - $flyoutWidth;
+$handleWidth: 50px;
+$hiddenWidth: $handleWidth - $flyoutWidth;
 
 $cAlaydi: #a33;
 $cGray3: #333;
