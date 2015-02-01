@@ -17,6 +17,10 @@
   margin: 0;
   padding: 0;
 	}
+
+	ul, li, p, span, a {
+  font-family: 'Gloria Hallelujah', cursive;
+	}
 }
 
 @mixin innerChalkboard() {

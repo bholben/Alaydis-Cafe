@@ -1,29 +1,60 @@
 
 section.blog {
   clear: both;
-  overflow: scroll;
-  border-bottom: 1px solid $cGrayC;
-  margin-bottom: 30px;
-  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 3px solid $cPurple;
+  margin-bottom: 6%;
+  background-color: white;
+  color: $cPurple;
+  // height: 300px;
   article {
     float: left;
     max-width: 50%;
     min-width: 300px;
     overflow: hidden;
     padding: 15px;
-    font-size: 20px;
+
+    h2 {
+      font-size: 3.5rem;
+    }
+
+    img {
+      width: 20rem;
+      display: block;
+      margin: 0px auto 5% auto;
+      border-radius: 5px;
+      border: solid 3px black;
+    }
+
+    div {
+      color: black;
+    }
+
+    h4 {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      color: #AD0000;
+    }
+    p {
+      color: black;
+      font-size: 1.5rem;
+    }
+
     a {
-      color: $cBlue;
+      color: $cPurple;
+      font-size: 1.7rem;
+      font-weight: bold;
+      font-style: italic;
       &:hover {
         text-decoration: none;
-        color: darken($cBlue, 25);
+        color: darken($cPurple, 25);
       }
       &:focus {
         text-decoration: none;
-        color: darken($cBlue, 35);
+        color: darken($cPurple, 35);
       }
     }
   }
 }
-
-
