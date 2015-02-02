@@ -61,3 +61,23 @@
   right: 0;
 }
 
+.flyout-right2 {
+  margin-top: 425px;  
+  right: $hiddenWidth;
+  width: $flyoutWidth + 8px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+  .handle {
+    float: left;
+    width: 30px;
+  }
+  div {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+}
+.flyout-right2-open {
+  right: 0;
+}
