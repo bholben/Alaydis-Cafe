@@ -9,9 +9,7 @@ var clampText = function (text, chars) {
 };
 
 // Add story text.
-shortStoryText = clampText(storyText, 165);
-$('.story div').append(shortStoryText);
-
+$('.story div').append(clampText(storyText, 165));
 
 // Snag the template from the markup and convert to a function that can
 // accept input data.
@@ -28,7 +26,8 @@ $.getJSON(newsAPI)
 })
 .fail(function (jqXHR) {
   var msg = 'Error retrieving data from server. ';
-  $('article.news').prepend('<p class="error">' + msg + '</p>');
+  $('article.news').append('<p>' + msg + '</p>')
+                   .addClass('error-text');
   console.log(msg + jqXHR.statusText);
 });
 
@@ -44,14 +43,3 @@ $('.blog').on('click', 'article a.expand', function (e) {
   }
 });
 
-
-// // Collapse article if "Show Less" is clicked.
-// $('.blog').on('click', 'article a.collapse', function (e) {
-//   e.preventDefault();
-//   var isStory = $(e.target).parents().filter('article').hasClass('story');
-//   if (isStory) {
-//     $('article.story p').html(shortStoryText);
-//   } else {
-//     $('article.news p').html(shortNewsPost);
-//   }
-// });

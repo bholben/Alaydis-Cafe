@@ -51,7 +51,7 @@ a {
 
 small { font-size: 1.2rem; color: $cGray9; }
 
-.success-text { color: green; }
+.success-text { color: green !important; }
 
-.error-text { color: red; }
+.error-text { color: red !important; }
 
