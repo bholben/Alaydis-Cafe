@@ -14,19 +14,26 @@
   h3 {
     padding-bottom: 10px;
   }
-}
-
-.handle {
-  width: $handleWidth;
-  height: $flyoutHeight;
-  line-height: $flyoutHeight;
-  text-align: center;
-  cursor: pointer;
-  .fa {
-    font-size: 24px;
-    color: $cGray6;
+  .handle {
+    width: $handleWidth;
+    height: $flyoutHeight;
+    line-height: $flyoutHeight;
+    text-align: center;
+    cursor: pointer;
+    .fa {
+      font-size: 24px;
+      color: $cGray6;
+    }
+    span {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    }
   }
 }
+
 
 .flyout-left {
   left: $hiddenWidth;
@@ -46,7 +53,6 @@
 }
 
 .flyout-right {
-  right: $hiddenWidth;
   width: $flyoutWidth + 8px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -57,32 +63,26 @@
   }
 }
 
-.flyout-right-open {
-  right: 0;
+.map {
+  right: $hiddenWidth;
 }
 
-.flyout-rightPics {
-  margin-top: 425px;  
-  right: $hiddenWidth;
-  width: $flyoutWidth + 8px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-right: none;
-  .handle {
-    float: left;
-    width: 30px;
-  }
+.map-open {
+  right: 0 !important;
+}
 
+.pics {
+  top: 475px;
+  right: $hiddenWidth;
   h3 {
     text-align: center;
   }
-
   div {
     margin-top: 10px;
     text-align: center;
   }
-
 }
-.flyout-rightPics-open {
+
+.pics-open {
   right: 0;
 }

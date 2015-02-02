@@ -7,7 +7,6 @@ section.blog {
   margin-bottom: 6%;
   background-color: white;
   color: $cPurple;
-  // height: 300px;
   article {
     float: left;
     max-width: 50%;
@@ -30,7 +29,7 @@ section.blog {
     }
 
     div {
-      color: black;      
+      color: black;
     }
 
     h4 {
@@ -62,21 +61,4 @@ section.blog {
     }
   }
 }
-.comment-container {
-  border-radius: 5px;
-  border: 3px solid $cPurple;
-  margin-bottom: 6%;
-  background-color: white;
-  color: $cPurple;
-  padding: 4%;
-}
-
-.leave-comment {
-  font-family: 'Pacifico', cursive;
-  padding: 0;
-  margin: 0 0 5%;
-  text-align: center;
-}
-
-
 

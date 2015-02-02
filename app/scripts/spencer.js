@@ -1,4 +1,3 @@
-_.templateSettings = { interpolate: /\{\{(.+?)\}\}/g };
 
 // DECLARE AND ASSIGN VARIABLES
 
@@ -18,7 +17,7 @@ var menuTemplate = _.template($('#menu-template').text())
 var soupTemplate = _.template($('#soups-template').text())
 
 breakfast.forEach(function (food) {
-$('.breakfast-items').append(menuTemplate(food));	
+$('.breakfast-items').append(menuTemplate(food));
 });
 
 sandwiches.forEach(function (food) {
@@ -34,7 +33,7 @@ $('.soup-items').append(soupTemplate(food));
 });
 
 drinks.forEach(function (food) {
-	if (food.item == "Coffee") { 
+	if (food.item == "Coffee") {
 		$('.drink-items').append(_.template($('#coffee-template').text())(food));
 } else {
 		$('.drink-items').append(menuTemplate(food));
@@ -218,7 +217,7 @@ if($(window).width() > 768){
 $('.accordion__content:not(:first)').hide();
 // Activate first tab
 $('.accordion__title:first-child').addClass('active');
-} else {  
+} else {
 // Hide all content items on narrow viewports
 $('.accordion__content').hide();
 };
@@ -233,7 +232,7 @@ $(this).next().show("slow").prev().addClass('active').siblings().removeClass('ac
 
 //INSTAGRAM PHOTOS OF ALAYDI
 $.ajax({
-  dataType: "jsonp", 
+  dataType: "jsonp",
   url: instaAlaydisCafe,
   success: function (data) {
     search_results = data;

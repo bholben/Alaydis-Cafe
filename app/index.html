@@ -24,7 +24,6 @@
     <!-- endbuild -->
   </head>
   <body>
-
     <section class="banner">
       <header>
         <nav>
@@ -54,6 +53,11 @@
           </ul>
         </div>
       </div>
+    </section>
+
+    <section class="instagram">
+      <ul class="instagram-image-bar">
+      </ul>
     </section>
 
     <div class="content">
@@ -136,7 +140,6 @@
           </script>
         </section>
 
-      
         <section class="blog">
           <article class="story">
             <h2>Alaydi's Story</h2>
@@ -153,14 +156,15 @@
           </article>
         </section>
 
-        <div class="comment-container">
-        <h2 class="leave-comment">
-          Graciously Accepting your Gratutitous Comments
-        </h2>
+        <section class="comments">
+          <h2 class="leave-comment">
+            Graciously Accepting your Gratutitous Comments
+          </h2>
 
           <div id="disqus_thread">
             <p></p>
           </div>
+
           <script type="text/javascript">
             // CUSTOM CONFIGURATION
             var disqus_shortname = 'alaydiscafe';
@@ -173,9 +177,7 @@
           </script>
 
           <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </div> 
-      
-
+        </section>
       </div>
 
       <div class="flyout flyout-left">
@@ -239,15 +241,14 @@
 
           </form>
         </section>
+
         <div class="handle">
           <span>Reserve a Table Here</span>
           <i class="fa fa-chevron-right"></i>
         </div>
       </div>
 
-      <div class="flyout flyout-right">
-
-        <section class="contact">
+      <div class="flyout flyout-right map">
         <div class="handle">
           <i class="fa fa-chevron-left"></i>
         </div>
@@ -262,63 +263,45 @@
           <div>
             115 Martin Luther King Dr NW
           </div>
-
-         </section>
+        </section>
       </div>
-     
-      <div class="flyout flyout-rightPics">
 
+      <div class="flyout flyout-right pics">
         <div class="handle">
           <i class="fa fa-chevron-left"></i>
-        </div>  
-          <section class="Flickr Pictures">
-            <h3>Atlanta Skyline</h3>
-            <iframe src="https://www.flickr.com/photos/24608030@N06/14976403570/in/photolist-peDtSM-oqaYA2-o5BDNm-qj2Vxw-p4SAhb-oPpZ1E-oPq46o-pu8i4A-pei896-p8eDE3-pXpJP5-qxY5B7-p7ssPT-oP2u9L-oP2bgF-qWEbk3-qy2UAv-qgtYes-qgtZaL-q4b1ij-oGNKjF-qB7arH-q1BY4Q-qMFsNR-q1RVeQ-pSipki-pJVnh5-pGymZG-oN2yPr-qmJx8C-quhuUb-qAeY7f-pHox3c-qAmVYp-pVPb3d-pf3VFd-nWebBb-oVA8LW-p1qdZS-quqfyP-prCwaG-pDWKfy-oXAd1b-qe67Te-paeEYD-pQzMgJ-oxR6w6-p1kY7Z-qYxrpH-p38LGF/player/" width="270" height="280" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
-            </iframe>
-            <div>Home Sweet Home</div>
-            <div>Click to enlarge</div>
-            
-          </section>
         </div>
-
-    </div>
-
-
-
-    <section class="photos-left">
-      <div>
-        <ul class="instagram-image-bar">
-        </ul>
+        <section class="Flickr Pictures">
+          <h3>Atlanta Skyline</h3>
+          <iframe src="https://www.flickr.com/photos/24608030@N06/14976403570/in/photolist-peDtSM-oqaYA2-o5BDNm-qj2Vxw-p4SAhb-oPpZ1E-oPq46o-pu8i4A-pei896-p8eDE3-pXpJP5-qxY5B7-p7ssPT-oP2u9L-oP2bgF-qWEbk3-qy2UAv-qgtYes-qgtZaL-q4b1ij-oGNKjF-qB7arH-q1BY4Q-qMFsNR-q1RVeQ-pSipki-pJVnh5-pGymZG-oN2yPr-qmJx8C-quhuUb-qAeY7f-pHox3c-qAmVYp-pVPb3d-pf3VFd-nWebBb-oVA8LW-p1qdZS-quqfyP-prCwaG-pDWKfy-oXAd1b-qe67Te-paeEYD-pQzMgJ-oxR6w6-p1kY7Z-qYxrpH-p38LGF/player/" width="270" height="280" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
+          </iframe>
+          <div>Home Sweet Home</div>
+          <div>Click to enlarge</div>
+        </section>
       </div>
-    </section>
-
-    <section class="photos-right">
-    </section>
+    </div>
   </div>
 
+  <!-- build:js scripts/vendor.js
+  <!-- bower:js -->
+  <script src="../bower_components/modernizr/modernizr.js"></script>
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/underscore/underscore.js"></script>
+  <script src="../bower_components/fastclick/lib/fastclick.js"></script>
+  <script src="../bower_components/jquery.cookie/jquery.cookie.js"></script>
+  <script src="../bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+  <script src="../bower_components/foundation/js/foundation.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    <!-- build:js scripts/vendor.js
-    <!-- bower:js -->
-    <script src="../bower_components/modernizr/modernizr.js"></script>
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <script src="../bower_components/underscore/underscore.js"></script>
-    <script src="../bower_components/fastclick/lib/fastclick.js"></script>
-    <script src="../bower_components/jquery.cookie/jquery.cookie.js"></script>
-    <script src="../bower_components/jquery-placeholder/jquery.placeholder.js"></script>
-    <script src="../bower_components/foundation/js/foundation.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <script src="scripts/menu.json"></script>
-        <script src="scripts/spencer.js"></script>
-        <script src="scripts/story_text.js"></script>
-        <script src="scripts/blog.js"></script>
-        <script src="scripts/flyouts.js"></script>
-        <script src="scripts/reservation.js"></script>
-        <script src="scripts/john.js"></script>
-        <!-- endbuild -->
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <script src="scripts/menu.json"></script>
+  <script src="scripts/spencer.js"></script>
+  <script src="scripts/story_text.js"></script>
+  <script src="scripts/blog.js"></script>
+  <script src="scripts/flyouts.js"></script>
+  <script src="scripts/reservation.js"></script>
+  <!-- endbuild -->
 </body>
 
 </html>
