@@ -8,7 +8,7 @@ The following students participated in this project.
 * [John Albritton](https://github.com/jtareb)
 * [Bob Holben](https://github.com/bholben)
 
-## We used three API's to create this site
+## We used the following API's to create this site
 
 1. Instagram's [Photo API](http://instagram.com/developer/endpoints/)
 2. Flickr's [Photo API](https://www.flickr.com/services/api/)
