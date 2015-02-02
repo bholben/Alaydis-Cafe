@@ -3,8 +3,8 @@ var flyoutLeft = $('.flyout-left'),
     handleLeft = $('.flyout-left .handle'),
     flyoutRight = $('.flyout-right'),
     handleRight = $('.flyout-right .handle'),
-    flyoutright2 = $('.flyout-right2'),
-    handleRight2 = $('.flyout-right2 .handle');
+    flyoutrightPics = $('.flyout-rightPics'),
+    handleRightPics = $('.flyout-rightPics .handle');
 
 handleLeft.on('click', function () {
   flyoutLeft.toggleClass('flyout-left-open');
@@ -24,11 +24,11 @@ handleRight.on('click', function () {
   };
 });
 
-handleRight2.on('click', function () {
-  flyoutRight2.toggleClass('flyout-right2-open');
-  if (flyoutRight2.hasClass('flyout-right2-open')) {
-    handleRight2.html('<i class="fa fa-chevron-right"></i>');
+handleRightPics.on('click', function () {
+  flyoutRightPics.toggleClass('flyout-rightPics-open');
+  if (flyoutRightPics.hasClass('flyout-rightPics-open')) {
+    handleRightPics.html('<i class="fa fa-chevron-right"></i>');
   } else {
-    handleRight2.html('<i class="fa fa-chevron-left"></i>');
+    handleRightPics.html('<i class="fa fa-chevron-left"></i>');
   };
 });

@@ -61,7 +61,7 @@
   right: 0;
 }
 
-.flyout-right2 {
+.flyout-rightPics {
   margin-top: 425px;  
   right: $hiddenWidth;
   width: $flyoutWidth + 8px;
@@ -72,12 +72,17 @@
     float: left;
     width: 30px;
   }
+
+  h3 {
+    text-align: center;
+  }
+
   div {
     margin-top: 10px;
     text-align: center;
   }
 
 }
-.flyout-right2-open {
+.flyout-rightPics-open {
   right: 0;
 }
