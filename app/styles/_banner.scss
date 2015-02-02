@@ -4,7 +4,7 @@ section.banner {
   background-image: url('/images/atlanta-skyline.jpg');
   background-size: 1420px 600px;
   overflow: auto;
-  height: 500px;
+  height: 525px;
 
   header {
     @include centerPage;
@@ -14,17 +14,17 @@ section.banner {
       li {
         margin: 0 5px;
       }
-      
+
       ul.social {
         float: right;
-        
+
         li {
           padding: 2px 0px;
           float: left;
-          
+
           img {
             width: 40px;
-            
+
             &:hover {
               background-color: white;
               border-radius: 50%;
@@ -43,7 +43,7 @@ section.banner {
     text-align: center;
     font-size: 1.6rem;
     overflow: auto;
-      
+
       img {
         display: block;
         width: 400px;
