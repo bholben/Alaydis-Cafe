@@ -10,190 +10,262 @@
     <link rel="stylesheet" href="styles/vendor.css">
 
     <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah|Rock+Salt' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="styles/main.css">
-
   </head>
   <body>
-
-    <section class="banner">  <!-- Spencer -->
+    <section class="banner">
       <header>
-
         <nav>
-          <ul class="nav">
-            <li><a href="#">Menu</li></a>
-            <li><a href="#">Reservations</li></a>
-            <li><a href="#">Hours & Directions</li></a>
-            <li><a href="#">Blog</li></a>
-          </ul>
-
           <ul class="social">
-            <li><a href="http://www.facebook.com"><img src="images/social/facebook_circle.png"></a></li>
+            <li><a href="http://www.facebook.com">
+
+            <img src="images/social/facebook_circle.png"></a></li>
+
+            </a></li>
+
             <li><a href="http://www.plus.google.com"><img src="images/social/googleplus_circle.png"></a></li>
             <li><a href="http://www.twitter.com"><img src="images/social/twitter_circle.png"></a></li>
             <li><a href="http://www.pinterest.com"><img src="images/social/pinterest_circle.png"></a></li>
-            <li><a href="http://www.instagram.com"><img src="images/social/instagram_circle.png"></a></li>
+            <li><a href="http://www.instagram.com/alaydiscafe"><img src="images/social/instagram_circle.png"></a></li>
           </ul>
         </nav>
-
-
-
-        <div class= "welcome-container">
-          <h2>Welcome to</h2>
-          <img src="images/logo-hipster.png">
-        </div>
-
-        <span>Check out our <br/>
-        Daily Special!</span>
-
-        <section class="menu">  <!-- Spencer -->
-
-        <h2>Our Menu</h2>
-
-          <div class="breakfast">
-            <h4>Breakfast</h4>
-            <ul class ="breakfast-items">
-            </ul>
-          </div>
-
-          <div class="sandwiches">
-            <h4>Sandwiches</h4>
-            <ul class ="sandwich-items">
-            </ul>
-          </div>
-
-          <div class="salads">
-            <h4>Salads</h4>
-            <ul class ="salad-items">
-            </ul>
-          </div>
-
-          <div class="soup">
-            <h4>Soup of the Day</h4>
-            <ul class="soup-items">
-            </ul>
-          </div>
-
-          <div class="drinks">
-            <h4>Drinks</h4>
-            <ul class="drink-items">
-            </ul>
-          </div>
-
-          <div class="toppings">
-            <h4>Toppings & Extras</h4>
-            <ul class="topping-items">
-            </ul>
-          </div>
-
-          <div class="desserts">
-            <h4>Desserts</h4>
-            <ul class="dessert-items">
-            </ul>
-          </div>
-
-          <div class="v-desserts">
-            <h4>Veras Desserts</h4>
-            <ul class="v-dessert-items">
-            </ul>
-          </div>
-        </section>
       </header>
+
+      <div class= "welcome-container">
+        <img id="top-page" src="images/final-logo.png">
+        <div class="information">
+          <ul>
+            <li>Monday - Friday | 7AM - 6PM</li>
+            <li>Saturday if we feel like it...</li>
+            <li class="phone-num">(404)-906-2422</li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-
     <div class="content">
+      <div class="content-inner">
+        <section class="menu">
+          <dl class="accordion">
+            <h2>Our Menu</h2>
+            <dt class="accordion__title">Breakfast</dt>
+            <dd class="accordion__content">
+              <ul class="breakfast-items">
+              </ul>
+              <div class="special breakfast-special">
+              </div>
+            </dd>
+            <dt class="accordion__title">Sandwiches</dt>
+            <dd class="accordion__content">
+              <ul class="sandwich-items">
+              </ul>
+              <div class="special sandwich-special">
+              </div>
+            </dd>
+            <dt class="accordion__title">Salads</dt>
+            <dd class="accordion__content">
+              <ul class="salad-items">
+              </ul>
+              <div class="special salad-special">
+              </div>
+            </dd>
+            <dt class="accordion__title">Soup of the Day</dt>
+            <dd class="accordion__content">
+              <ul class="soup-items">
+              </ul>
+              <div class="special soup-special">
+              </div>
+            </dd>
+            <dt class="accordion__title">Drinks</dt>
+            <dd class="accordion__content">
+              <ul class="drink-items">
+              </ul>
+              <div class="special drink-special">
+              </div>
+            </dd>
+            <dt class="accordion__title">Toppings & Extras</dt>
+            <dd class="accordion__content">
+              <ul class="topping-items">
+              </ul>
+              <div class="special topping-special">
+              </div>
+            </dd>
+            <dt class="accordion__title">Desserts</dt>
+            <dd class="accordion__content">
+              <ul class="dessert-items">
+              </ul>
+              <div class="special dessert-special">
+              </div>
+            </dd>
+            <dt class="accordion__title">Vera's Desserts</dt>
+            <dd class="accordion__content">
+              <ul class="v-dessert-items">
+              </ul>
+              <div class="special v-dessert-special">
+              </div>
+            </dd>
+          </dl>
 
-      <section class="blog">  <!-- Bob -->
-
-        <article class="story">
-          <h2>Our Story</h2>
-          <div></div>
-        </article>
-
-        <article class="news">
-          <h2>Latest News</h2>
-
-          <script type="text/template" id="latestNewsTemplate">
-            <h4>{{ title }}</h4>
-            <p>{{ post }}</p>
+          <script type="text/template" id="menu-template">
+            <li class="menuList">{{item}} ..... ${{price}}
+            </li>
           </script>
 
-        </article>
+          <script type="text/template" id="soups-template">
+            <li class="menuList">
+            {{item}} ..... (cup) ${{price.cup}}, (bowl) ${{price.bowl}}
+            </li>
+          </script>
 
-      </section>
+          <script type="text/template" id="coffee-template">
+            <li class="menuList">{{item}} ..... (small) ${{price.small}}, (large) ${{price.large}}
+            </li>
+          </script>
+        </section>
 
-      <section class="contact">  <!-- John -->
-      <!--  Hours & Directions-->
-            <div class="leftcol">
-              <ul>
-                <li>
+        <section class="blog">
+          <article class="story">
+            <h2>Alaydi's Story</h2>
+            <img src="images/linda_kasim.jpg">
+            <div></div>
+          </article>
 
-                 <div class="dottedbg"></div>  
-                <lable>Contact</lable>
-                <span>Linda Alaydi</span>
-                </li>
+          <article class="news">
+            <h2>Kitchen Blog</h2>
+            <script type="text/template" id="latestNewsTemplate">
+              <h4>{{ title }}</h4>
+              <p>{{ post }}</p>
+            </script>
+          </article>
+        </section>
 
-                <li>
-                 <div class="dottedbg"></div>  
-                <lable>Phone Number</lable>
-                <span>404 555-5555</span>
-                </li>
+        <section class="comments">
+          <h2 class="leave-comment">Graciously Accepting your Gratutitous Comments</h2>
+          <div id="disqus_thread"><p></p></div>
+        </section>
+      </div>
 
+      <div class="flyout flyout-left">
+        <section class="reservations">
+          <h3>Reserve a Table</h3>
+          <form action="/" method="post" id="reservationsForm">
 
-                <li>
-                <div class="dottedbg"></div>
-                <label>E-Mail</label>
-                <span>lindaalaydi@yahoo.com</span>
-                </li>
-              
-                 
-                <li>
-                 <div class="dottedbg"></div>
-                <lable>Address</lable>
-                <span>115 Martin Luther King Dr NW Atlanta Georgia</span>
-                </li>
-
-                <li>
-                 <div class="dottedbg"></div>            
-                <lable>Hours</lable>
-                <span>7am to 4pm</span>
-                </li>
-              </ul>
-
-              <!--add email and other info-->
+            <div class="row">
+              <div class="small-4 columns">
+                <span class="prefix">Name</span>
+              </div>
+              <div class="small-8 columns">
+                <input type="text" name="fullName" placeholder="Full name...">
+              </div>
             </div>
 
+            <div class="row">
+              <div class="small-4 columns">
+                <span class="prefix">Date</span>
+              </div>
+              <div class="small-8 columns">
+                <input type="date" name="date">
+              </div>
+            </div>
 
-            <div class="rightcol">
-              <iframe
-                  width="530"
-                  height="350"
-                  frameborder="0" style="border:0"
+            <div class="row">
+              <div class="small-4 columns">
+                <span class="prefix">Party No.</span>
+              </div>
+              <div class="small-8 columns">
+                <input type="number" name="numParty" placeholder="1-20">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="small-4 columns">
+                <span class="prefix">Seating Preference</span>
+              </div>
+
+              <div class="small-8 columns">
+                <select type="text" name="seatingPref">
+                  <option value="indoor">Indoor</option>
+                  <option value="outdoor">Outdoor</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="small-12 columns">
+                <textarea name="notes" rows="5" placeholder="Special notes..."></textarea>
+              </div>
+            </div>
+
+            <div class="row">
+              <input type="submit" value="Reserve Table">
+            </div>
+
+            <div class="row">
+              <div class="small-12 columns confirm-reservation hide"></div>
+            </div>
+
+          </form>
+        </section>
+
+        <div class="handle">
+          <span>Reserve a Table Here</span>
+          <i class="fa fa-chevron-right"></i>
+        </div>
+      </div>
+
+      <div class="flyout flyout-right map">
+        <div class="handle">
+          <i class="fa fa-chevron-left"></i>
+        </div>
+        <section class="map">
+          <h3>Location</h3>
+          <iframe width="270"
+                  height="280"
+                  frameborder="0"
                   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3d2TDoBv5yRjjsRTuVZ1DgapTgmXQYKE
                   &q=115 Martin Luther King Dr Se, Atlanta+Ga">
-              </iframe>
-            </div>
+          </iframe>
+          <div>
+            115 Martin Luther King Dr NW
+          </div>
+        </section>
+      </div>
 
-      </section>
-
+      <div class="flyout flyout-right pics">
+        <div class="handle">
+          <i class="fa fa-chevron-left"></i>
+        </div>
+        <section class="Flickr Pictures">
+          <h3>Atlanta Skyline</h3>
+          <iframe src="https://www.flickr.com/photos/24608030@N06/14976403570/in/photolist-peDtSM-oqaYA2-o5BDNm-qj2Vxw-p4SAhb-oPpZ1E-oPq46o-pu8i4A-pei896-p8eDE3-pXpJP5-qxY5B7-p7ssPT-oP2u9L-oP2bgF-qWEbk3-qy2UAv-qgtYes-qgtZaL-q4b1ij-oGNKjF-qB7arH-q1BY4Q-qMFsNR-q1RVeQ-pSipki-pJVnh5-pGymZG-oN2yPr-qmJx8C-quhuUb-qAeY7f-pHox3c-qAmVYp-pVPb3d-pf3VFd-nWebBb-oVA8LW-p1qdZS-quqfyP-prCwaG-pDWKfy-oXAd1b-qe67Te-paeEYD-pQzMgJ-oxR6w6-p1kY7Z-qYxrpH-p38LGF/player/" width="270" height="280" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
+          </iframe>
+          <div>Home Sweet Home</div>
+          <div>Click to enlarge</div>
+        </section>
+      </div>
     </div>
+  </div>
 
-  <!-- JS Templates -->
-  <script type="text/template" id="menu-template">
-    <li>{{item}} ..... {{price}}</li>
-  </script>
+  <!-- build:js scripts/vendor.js
+  <!-- bower:js -->
+  <script src="../bower_components/modernizr/modernizr.js"></script>
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/underscore/underscore.js"></script>
+  <script src="../bower_components/fastclick/lib/fastclick.js"></script>
+  <script src="../bower_components/jquery.cookie/jquery.cookie.js"></script>
+  <script src="../bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+  <script src="../bower_components/foundation/js/foundation.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
 
-  <script type="text/template" id="soups-template">
-    <li>{{item}} ..... {{price.cup}}, {{price.bowl}}</li>
-  </script>
+  <script src="//alaydiscafe.disqus.com/embed.js" async></script>
 
-  <script type="text/template" id="coffee-template">
-    <li>{{item}} ..... {{price.small}}, {{price.large}}</li>
-  </script>
-
-    <script src="scripts/vendor.js"></script>
-
-        <script src="scripts/main.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
+
 </html>
+
