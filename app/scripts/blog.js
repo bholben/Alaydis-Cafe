@@ -9,7 +9,7 @@ var clampText = function (text, chars) {
 };
 
 // Add story text.
-shortStoryText = clampText(storyText, 160);
+shortStoryText = clampText(storyText, 165);
 $('.story div').append(shortStoryText);
 
 
@@ -22,8 +22,8 @@ latestNewsTemplate = _.template($('#latestNewsTemplate').html());
 var newsAPI = 'http://private-anon-eafb492e3-restaurantapi.apiary-mock.com/news/latest';
 $.getJSON(newsAPI)
 .done(function (data) {
-  fullNewsPost = data.post + ' <a href="#" class="collapse">Show Less</a>';
-  shortNewsPost = data.post = clampText(data.post, 105);
+  fullNewsPost = data.post;
+  shortNewsPost = data.post = clampText(data.post, 540);
   $('article.news h2').after(latestNewsTemplate(data));
 })
 .fail(function (jqXHR) {
