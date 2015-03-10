@@ -19,6 +19,7 @@ A group project where we created a restaurant website (we chose an actual restau
   * jQuery
   * AJAX
   * Underscore (templating)
+  * Divshot
 
 ### APIs
   * Instagram
